@@ -8,6 +8,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardArch-size.webp',
+    quantityMonths: '2',
+    quantityVideo: '145',
+    quantityHours: '17',
+    quantityStudents: '474',
   },
   {
     id: 2,
@@ -15,6 +19,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardTeamlead-size.webp',
+    quantityMonths: '1',
+    quantityVideo: '16',
+    quantityHours: '2',
+    quantityStudents: '101',
   },
   {
     id: 3,
@@ -22,6 +30,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardTesting-size.webp',
+    quantityMonths: '2',
+    quantityVideo: '14',
+    quantityHours: '6',
+    quantityStudents: '125',
   },
   {
     id: 4,
@@ -29,6 +41,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardAI-size.webp',
+    quantityMonths: '',
+    quantityVideo: '2',
+    quantityHours: '5',
+    quantityStudents: '102',
   },
   {
     id: 5,
@@ -36,6 +52,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardAddress-size.webp',
+    quantityMonths: '1',
+    quantityVideo: '8',
+    quantityHours: '4',
+    quantityStudents: '56',
   },
   {
     id: 6,
@@ -43,6 +63,10 @@ const slides = [
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
     image: '/src/assets/img/portal/cardUnitynew-size.webp',
+    quantityMonths: '999',
+    quantityVideo: '999',
+    quantityHours: '999',
+    quantityStudents: '999',
   },
 ];
 
@@ -99,8 +123,30 @@ const VerticalSlider = () => {
             <img className='slideBackground' src={slide.image} alt={slide.title} />
             <div className='slideContent'>
               <div className='slideInfo'>
-                <h2>{slide.title}</h2>
-                {index === activeIndex && <p>{slide.description}</p>}
+                <div>
+                  <h2>{slide.title}</h2>
+                  {/* {index === activeIndex && <p>{slide.description}</p>} */}
+                  <p>{slide.description}</p>
+                  <button className='slideButton'>Перейти</button>
+                </div>
+                <div className='slideInfoAboutCourseRow'>
+                  <div className='slideInfoAboutCourse'>
+                    <h5>{slide.quantityMonths}</h5>
+                    <h6>months</h6>
+                  </div>
+                  <div className='slideInfoAboutCourse'>
+                    <h5>{slide.quantityVideo}</h5>
+                    <h6>videos</h6>
+                  </div>
+                  <div className='slideInfoAboutCourse'>
+                    <h5>{slide.quantityHours}</h5>
+                    <h6>hours</h6>
+                  </div>
+                  <div className='slideInfoAboutCourse'>
+                    <h5>{slide.quantityStudents}</h5>
+                    <h6>students</h6>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

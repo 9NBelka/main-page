@@ -17,8 +17,8 @@ export default function Portal() {
       const windowHeight = window.innerHeight;
 
       // Смещение рассчитывается на основе центра окна
-      const moveX = ((windowWidth / 2 - clientX) / windowWidth) * 5;
-      const moveY = ((windowHeight / 2 - clientY) / windowHeight) * 5;
+      const moveX = ((windowWidth / 2 - clientX) / windowWidth) * 4;
+      const moveY = ((windowHeight / 2 - clientY) / windowHeight) * 4;
 
       const moveSmallX = ((windowWidth / 2 - clientX) / windowWidth) * 2;
       const moveSmallY = ((windowHeight / 2 - clientY) / windowHeight) * 2;
