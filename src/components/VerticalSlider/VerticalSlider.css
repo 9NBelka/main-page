@@ -24,34 +24,34 @@
 .slide {
   display: flex;
   position: absolute;
-  /* top: 0; */
-  right: -200px;
+  top: 15vw;
+  right: -10vw;
   width: 100%;
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease-out, scale 0.5s ease-out; /* Плавные переходы для всех свойств */
   /* transform-origin: center; */
   cursor: pointer;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 1.5vw;
 }
 
 @media (min-width: 1920px) {
   .slide {
-    top: 320px;
-    right: -10vw;
+    top: 16vw;
+    right: -12vw;
   }
 }
 
 .slideBackground {
   display: flex;
-  width: 900px;
+  width: 47vw;
 }
 
 @media (min-width: 1920px) {
   .slideBackground {
     display: flex;
-    width: 46vw;
+    width: 45vw;
   }
 }
 
@@ -61,18 +61,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 30px;
+  padding: 1vw 1.5vw;
 }
 
 .slideInfo {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 22vw;
 }
 
 .slideInfo h2 {
   display: flex;
-  font-size: 36px;
+  font-size: 2vw;
   color: white;
   font-family: var(--font-bios-bold);
   font-weight: var(--font-weight-normal);
@@ -81,27 +81,28 @@
 
 .slideInfo p {
   display: flex;
-  font-size: 19px;
+  font-size: 1vw;
   color: white;
   font-family: var(--font-ibmp);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-lineh-normal);
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 1.5vw;
 }
 
 .slide.active {
   opacity: 1;
-  transform: translateY(0) scale(1) translateX(-100px); /* Центральный слайд с увеличением */
+  transform: translateY(0) scale(1) translateX(-5vw); /* Центральный слайд с увеличением */
   z-index: 5;
   filter: brightness(1);
+  cursor: default;
 }
 
 .slide.prev {
   /* opacity: 0.5; */
   opacity: 1;
-  transform: translateY(-120px) scale(0.9) translateX(-80px); /* Слайд выше с уменьшением */
+  transform: translateY(-6vw) scale(0.9) translateX(-4vw); /* Слайд выше с уменьшением */
   z-index: 4;
   filter: brightness(0.5);
 }
@@ -109,7 +110,7 @@
 .slide.next {
   /* opacity: 0.5; */
   opacity: 1;
-  transform: translateY(120px) scale(0.9) translateX(-80px); /* Слайд ниже с уменьшением */
+  transform: translateY(6vw) scale(0.9) translateX(-4vw); /* Слайд ниже с уменьшением */
   z-index: 4;
   filter: brightness(0.5);
 }
@@ -117,7 +118,7 @@
 .slide.after-next {
   /* opacity: 0.2; */
   opacity: 1;
-  transform: translateY(230px) scale(0.8) translateX(-60px); /* Слайд дальше снизу */
+  transform: translateY(11vw) scale(0.8) translateX(-3vw); /* Слайд дальше снизу */
   z-index: 3;
   filter: brightness(0.5);
 }
@@ -125,13 +126,13 @@
 .slide.before-prev {
   /* opacity: 0.2; */
   opacity: 1;
-  transform: translateY(-230px) scale(0.8) translateX(-60px); /* Слайд дальше сверху */
+  transform: translateY(-11vw) scale(0.8) translateX(-3vw); /* Слайд дальше сверху */
   z-index: 3;
   filter: brightness(0.5);
 }
 
 .slide.hidden {
   /* display: none; */
-  transform: translateX(230px);
+  transform: translateX(11vw);
   filter: brightness(0.5);
 }

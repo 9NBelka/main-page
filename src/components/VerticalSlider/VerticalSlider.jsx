@@ -7,42 +7,42 @@ const slides = [
     title: 'ARCHITECTURE UNITY GAME',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardArch-size.webp',
+    image: '/src/assets/img/portal/cardArch-size.webp',
   },
   {
     id: 2,
     title: 'Team Lead',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardTeamlead-size.webp',
+    image: '/src/assets/img/portal/cardTeamlead-size.webp',
   },
   {
     id: 3,
     title: 'ADVANCED UNIT TESTING IN UNITY',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardTesting-size.webp',
+    image: '/src/assets/img/portal/cardTesting-size.webp',
   },
   {
     id: 4,
     title: 'Utility AI',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardAI-size.webp',
+    image: '/src/assets/img/portal/cardAI-size.webp',
   },
   {
     id: 5,
     title: 'ADDRESSABLES: ANESTHESIA',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardAddress-size.webp',
+    image: '/src/assets/img/portal/cardAddress-size.webp',
   },
   {
     id: 6,
     title: 'Слайд 6',
     description:
       'Курс для того, хто має базову навичку в розробці, знання C# і хоче поглибити свої уявлення про архітектуру ігор індустріальних підходах, та й взагалі – про те, як ці ігри робити.',
-    image: 'https://lms.k-syndicate.school/wp-content/uploads/2023/11/cardUnitynew-size.webp',
+    image: '/src/assets/img/portal/cardUnitynew-size.webp',
   },
 ];
 

@@ -14,8 +14,14 @@ export default function PortalHeader() {
             src='http://portal.k-syndicate.school/img/main/logo-main.png'
           />
           <ul className={css.headerList}>
+            <li className={css.headerButton}>
+              <h4>Ask a question</h4>
+            </li>
             <li>
-              <img src='http://portal.k-syndicate.school/img/main/Flag_UA.jpg' />
+              <img
+                className={css.headerIconFlag}
+                src='http://portal.k-syndicate.school/img/main/Flag_UA.jpg'
+              />
             </li>
             <li>
               <BsList className={clsx(css.headerIcons, css.headerIconBurger)} />
