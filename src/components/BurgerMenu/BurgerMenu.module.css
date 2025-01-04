@@ -1,6 +1,6 @@
 .burgerIcon {
   cursor: pointer;
-  z-index: 1001;
+  z-index: 101;
   position: relative;
 }
 
@@ -27,14 +27,15 @@
   box-shadow: -1vw 0vw 2vw rgb(0, 0, 0, 1);
   backdrop-filter: blur(0.5vw);
   width: 13vw;
-  height: 48vw;
+  height: 47vw;
   position: absolute;
-  top: 0;
+  top: -1.5vw;
   right: 0;
   transform: translateX(150%);
   transition: transform 0.3s ease-in-out;
   z-index: 100;
   padding: 1vw;
+  padding-top: 1.5vw;
   border-top-left-radius: 1vw;
 }
 

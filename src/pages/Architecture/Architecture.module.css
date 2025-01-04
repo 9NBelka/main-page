@@ -1,0 +1,11 @@
+.architectureBackground {
+  display: flex;
+  /* background-attachment: fixed; */
+  width: 100%;
+  height: 56.3vw;
+  background: rgb(8, 13, 24);
+  background: linear-gradient(115deg, rgba(8, 13, 24, 1) 0%, rgba(2, 8, 13, 1) 68%);
+
+  position: relative;
+  overflow: hidden;
+}

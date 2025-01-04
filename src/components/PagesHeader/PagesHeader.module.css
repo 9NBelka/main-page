@@ -1,14 +1,16 @@
 .header {
-  /* background-color: black; */
+  /* background-color: #000410; */
   position: fixed;
-  top: 0;
+  top: 1.5vw;
   width: 100%;
   z-index: 1000;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
-  margin-top: 1.5vw;
+  /* margin-top: 1.5vw; */
+  transition: top 0.3s ease;
+}
+
+.header.scrolled {
+  top: 0;
 }
 
 .headerNav {
@@ -17,11 +19,33 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5vw 4vw;
+  /* padding-right: 4vw; */
   padding-right: 0;
 }
 
 .headerLogo {
-  width: 12vw;
+  width: 8.5vw;
+}
+
+.headerNavText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 3vw;
+}
+
+.headerNavText li {
+  display: flex;
+  font-size: 0.85vw;
+  font-family: var(--font-helv-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 .headerList {
@@ -36,7 +60,7 @@
   padding-right: 2vw;
 }
 
-.headerButton {
+/* .headerButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +83,7 @@
   line-height: var(--font-lineh-normal);
   color: black;
   font-size: 0.9vw;
-}
+} */
 
 .headerIconFlag {
   width: 1.3vw;
