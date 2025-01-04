@@ -14,6 +14,7 @@ import {
   BsDiscord,
 } from 'react-icons/bs';
 import css from './BurgerMenu.module.css';
+import { NavLink } from 'react-router-dom';
 
 export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,37 +54,49 @@ export default function BurgerMenu() {
             <li>
               <div className={css.menuListIconSection}>
                 <BsController className={css.menuListIcons} />
-                <a href='#section1'>Architecture</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>Architecture</h4>
+                </NavLink>
               </div>
             </li>
             <li>
               <div className={css.menuListIconSection}>
                 <BsPeople className={css.menuListIcons} />
-                <a href='#section2'>TeamLead</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>TeamLead</h4>
+                </NavLink>
               </div>
             </li>
             <li>
               <div className={css.menuListIconSection}>
                 <BsCpu className={css.menuListIcons} />
-                <a href='#section3'>UnitTesting</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>UnitTesting</h4>
+                </NavLink>
               </div>
             </li>
             <li>
               <div className={css.menuListIconSection}>
                 <BsPlugin className={css.menuListIcons} />
-                <a href='#section3'>UtilityAI</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>UtilityAI</h4>
+                </NavLink>
               </div>
             </li>
             <li>
               <div className={css.menuListIconSection}>
                 <BsPlugin className={css.menuListIcons} />
-                <a href='#section3'>Addressables</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>Addressables</h4>
+                </NavLink>
               </div>
             </li>
             <li>
               <div className={css.menuListIconSection}>
                 <BsPlugin className={css.menuListIcons} />
-                <a href='#section3'>ECS</a>
+                <NavLink to='/architecture' className={css.menuListPoint}>
+                  <h4>ECS</h4>
+                </NavLink>
               </div>
               <h6 className={css.menuListNewCourse}>new</h6>
             </li>
