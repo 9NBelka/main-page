@@ -13,6 +13,11 @@ body {
   src: url(/src/assets/fonts/IBMPlexSans-Light.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+  font-family: HelveticaNeueCyr-Medium; /* Гарнитура шрифта */
+  src: url(/src/assets/fonts/HelveticaNeueCyr-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +31,7 @@ h6 {
 :root {
   --font-bios-bold: 'Bios-Bold';
   --font-ibmp: 'IBMPlexSans-Light';
+  --font-helv-medium: 'HelveticaNeueCyr-Medium';
   --font-weight-normal: normal;
   --font-weight-bold: bold;
   --font-lineh-normal: 1.3em;
