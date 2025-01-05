@@ -44,6 +44,9 @@ export default function PagesHeader({ srcLogoArch }) {
       setIsScrolled(window.scrollY > 30);
     };
 
+    // Проверка скролла при загрузке страницы
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -51,7 +54,7 @@ export default function PagesHeader({ srcLogoArch }) {
   }, []);
 
   return (
-    <header className={clsx(css.header, `${isScrolled ? 'scrolled' : ''}`)}>
+    <header className={clsx(css.header, `${isScrolled ? css.headerScrolled : ''}`)}>
       <nav className={css.headerNav}>
         <img className={css.headerLogo} src={srcLogoArch} />
         <ul className={css.headerNavText}>

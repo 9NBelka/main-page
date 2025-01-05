@@ -1,15 +1,15 @@
 .header {
-  /* background-color: #000410; */
+  background-color: #000410;
   position: fixed;
   top: 1.5vw;
   width: 100%;
   z-index: 1000;
   transition: 0.5s;
   /* margin-top: 1.5vw; */
-  transition: top 0.3s ease;
+  /* transition: top 0.3s ease; */
 }
 
-.header.scrolled {
+.headerScrolled {
   top: 0;
 }
 
