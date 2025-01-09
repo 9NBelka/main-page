@@ -1,8 +1,8 @@
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
 import PagesHeader from '../../components/PagesHeader/PagesHeader';
-import css from './Architecture.module.css';
+import css from './TeamLead.module.css';
 
-export default function Architecture({ currentInfo }) {
+export default function TeamLead({ currentInfo }) {
   return (
     <>
       <div className={css.architectureBackground}>

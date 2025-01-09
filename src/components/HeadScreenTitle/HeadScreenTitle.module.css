@@ -14,13 +14,18 @@
   line-height: var(--font-lineh-normal);
 }
 
-.nameCourse {
+.nameCourse,
+.subNameCourse {
   display: flex;
   font-size: 5vw;
   color: white;
   font-family: var(--font-ExanRegular);
   font-weight: var(--font-weight-bold);
   line-height: var(--font-lineh-normal);
+}
+
+.subNameCourse {
+  font-size: 3vw;
 }
 
 .descriptionCourse {

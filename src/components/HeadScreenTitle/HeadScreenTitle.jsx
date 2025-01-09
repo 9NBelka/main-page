@@ -1,16 +1,21 @@
 import css from './HeadScreenTitle.module.css';
+// import info from '../../allPagesInformation.json';
+// import { useLocation } from 'react-router-dom';
 
-export default function HeadScreenTitle() {
+export default function HeadScreenTitle({ currentInfo }) {
   return (
     <div className={css.headScreenTitle}>
-      <h4 className={css.categoryCourses}>Course</h4>
-      <h1 className={css.nameCourse}>ARCHITECTURE UNITY GAMES</h1>
-      <h5 className={css.descriptionCourse}>
-        Курс для того, кто имеет базовый навык в разработке, знания C# и хочет углубить свои
-        представления об архитектуре игр в индустриальных подходах, да и вообще – о том, как эти
-        игры делать.
-      </h5>
-      <h5 className={css.notification}>16 поток стартовал 2 декабря</h5>
+      {currentInfo ? (
+        <div>
+          <h4 className={css.categoryCourses}>{currentInfo.categoryCourse}</h4>
+          <h1 className={css.nameCourse}>{currentInfo.nameCourse}</h1>
+          <h2 className={css.subNameCourse}>{currentInfo.subNameCourse}</h2>
+          <h5 className={css.descriptionCourse}>{currentInfo.descriptionCourse}</h5>
+          <h5 className={css.notification}>{currentInfo.notificationCourse}</h5>
+        </div>
+      ) : (
+        <div>Информация для текущего пути не найдена</div>
+      )}
     </div>
   );
 }

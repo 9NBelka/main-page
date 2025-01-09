@@ -1,0 +1,13 @@
+.viewCourseText {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  text-shadow: black 0.2vw 0.1vw 0.1vw;
+  letter-spacing: 0.2vw;
+  margin-top: 2vw;
+}

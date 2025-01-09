@@ -1,19 +1,41 @@
+import clsx from 'clsx';
 import CountdownTimer from '../CountdownTimer/CountdownTimer';
 import css from './HeadScreenTimer.module.css';
+import { BsTelegram } from 'react-icons/bs';
 
-export default function HeadScreenTimer() {
-  const endDateTime = 'January 11, 2025 00:00:00';
+export default function HeadScreenTimer({ styles, endDateTime }) {
   return (
-    <div className={css.countdownAndAnswerBlocks}>
-      <div className={css.countdownTimerBlockWithTitle}>
+    <div
+      className={clsx(
+        endDateTime.endDateTime ? css.countdownAndAnswerBlocks : css.countdownAndAnswerBlocksOff,
+      )}>
+      <div
+        className={clsx(
+          css.countdownTimerBlockWithTitle,
+          styles.id == 1
+            ? css.countdownTimerBlockWithTitleTeamLead
+            : css.countdownTimerBlockWithTitle,
+        )}>
         <h5 className={css.countdownTimerTitle}>christmas sale заканчивается ЧЕРЕЗ:</h5>
-        <CountdownTimer endDateTime={endDateTime} />
+        <CountdownTimer endDateTime={endDateTime} color={styles} />
       </div>
-      <div className={css.answerBlock}>
-        <h5 className={css.answerBlockTitle}>задайте вопрос спикерам</h5>
-        <img
-          className={css.answerBlockImage}
-          src='https://lms.k-syndicate.school/wp-content/uploads/2022/09/telegram-icon-new.png'
+      <div
+        className={clsx(
+          css.answerBlock,
+          styles.id == 1 ? css.answerBlockTeamLead : css.answerBlock,
+        )}>
+        <h5
+          className={clsx(
+            css.answerBlockTitle,
+            styles.id == 1 ? css.answerBlockTitleTeamLead : css.answerBlockTitle,
+          )}>
+          задайте вопрос спикерам
+        </h5>
+        <BsTelegram
+          className={clsx(
+            css.answerBlockIcons,
+            styles.id == 1 ? css.answerBlockIconsTeamLead : css.answerBlockIcons,
+          )}
         />
       </div>
     </div>

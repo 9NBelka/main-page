@@ -59,7 +59,7 @@ export default function BurgerMenu() {
             <li>
               <div className={css.menuListIconSection}>
                 <BsPeople className={css.menuListIcons} />
-                <NavLink to='/architecture' className={css.menuListPoint}>
+                <NavLink to='/teamlead' className={css.menuListPoint}>
                   <h4>TeamLead</h4>
                 </NavLink>
               </div>

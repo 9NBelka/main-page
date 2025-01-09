@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "path": "/architecture",
+    "logoCourse": "/src/assets/img/architecture/ArchLogo.png",
+    "categoryCourse": "Course",
+    "nameCourse": "ARCHITECTURE UNITY GAMES",
+    "subNameCourse": "",
+    "descriptionCourse": "Курс для того, кто имеет базовый навык в разработке, знания C# и хочет углубить свои представления об архитектуре игр в индустриальных подходах, да и вообще – о том, как эти игры делать.",
+    "notificationCourse": "16 поток стартовал 2 декабря",
+    "endDateTime": "January 11, 2025 00:00:00"
+  },
+  {
+    "id": 1,
+    "path": "/teamlead",
+    "logoCourse": "/src/assets/img/teamlead/teamlead-logo.png",
+    "categoryCourse": "Master Class",
+    "nameCourse": "Team Lead",
+    "subNameCourse": "developers in gamedev",
+    "descriptionCourse": "Мастер-класс о том, как не сойти с ума, став лидом, перестать чувствовать себя самозванцем и выжать из этой позиции максимум развития для себя и команды.",
+    "notificationCourse": "",
+    "endDateTime": "January 12, 2025 00:00:00"
+  }
+]

@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import css from './CountdownTimer.module.css';
+import clsx from 'clsx';
 
-const CountdownTimer = ({ endDateTime }) => {
+const CountdownTimer = ({ endDateTime, color }) => {
   const calculateTimeLeft = useCallback(() => {
-    const difference = new Date(endDateTime) - new Date();
+    const difference = new Date(endDateTime.endDateTime) - new Date();
     let time = {};
     if (difference > 0) {
       time = {
@@ -16,7 +17,7 @@ const CountdownTimer = ({ endDateTime }) => {
       time = { day: 0, hour: 0, min: 0, sec: 0 }; // Все значения равны нулю после окончания таймера
     }
     return time;
-  }, [endDateTime]);
+  }, [endDateTime.endDateTime]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
@@ -36,12 +37,22 @@ const CountdownTimer = ({ endDateTime }) => {
       <span className={css.countdownTimerValue}>
         {formatWithLeadingZero(timeLeft[interval] || 0)}
       </span>
-      <span className={css.countdownTimerLabel}>{interval}</span>
+      <span
+        className={clsx(
+          css.countdownTimerLabel,
+          color.id == 1 ? css.countdownTimerLabelTeamLead : css.countdownTimerLabel,
+        )}>
+        {interval}
+      </span>
     </div>
   ));
 
   return (
-    <div className={css.countdownTimer}>
+    <div
+      className={clsx(
+        css.countdownTimer,
+        color.id == 1 ? css.countdownTimerTeamLead : css.countdownTimer,
+      )}>
       {timerComponents.length ? timerComponents : <span>00:00:00:00</span>}
     </div>
   );

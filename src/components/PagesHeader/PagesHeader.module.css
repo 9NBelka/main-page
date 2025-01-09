@@ -36,6 +36,10 @@
   width: 8.5vw;
 }
 
+.headerLogoBig {
+  width: 5.5vw;
+}
+
 .headerLogoUnity {
   display: flex;
   width: 1.5vw;

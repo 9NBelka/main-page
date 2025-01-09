@@ -5,7 +5,7 @@ import { BsPersonFill, BsCartFill } from 'react-icons/bs';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { useEffect, useState } from 'react';
 
-export default function PagesHeader({ srcLogoArch }) {
+export default function PagesHeader({ srcLogo }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,7 +27,10 @@ export default function PagesHeader({ srcLogoArch }) {
       <nav className={css.headerNav}>
         <div className={css.headerLogosAndButtonAnswer}>
           <div>
-            <img className={css.headerLogo} src={srcLogoArch} />
+            <img
+              className={clsx(css.headerLogo, srcLogo.id == 1 ? css.headerLogoBig : css.headerLogo)}
+              src={srcLogo.logoCourse}
+            />
           </div>
           <div>
             <img

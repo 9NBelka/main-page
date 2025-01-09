@@ -11,6 +11,10 @@
   width: 15vw;
 }
 
+.countdownTimerTeamLead {
+  box-shadow: 0 0 0.7vw 0 #832d78, 0 0 0.2vw 0 #7e2172;
+}
+
 .countdownTimerBlock {
   display: flex;
   flex-direction: column;
@@ -39,4 +43,9 @@
   text-transform: uppercase;
   letter-spacing: 0.1vw;
   text-shadow: 0 0 5px #00afd2, 0 8px 3px rgba(0, 176, 210, 0.2), 0 5px 15px #00afd2;
+}
+
+.countdownTimerLabelTeamLead {
+  color: #c395b1;
+  text-shadow: 0 0 5px #832d78, 0 8px 3px rgba(131, 46, 120, 0.2), 0 5px 15px #832d78;
 }
