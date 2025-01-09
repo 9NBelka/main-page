@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import './CountdownTimer.css';
+import css from './CountdownTimer.module.css';
 
 const CountdownTimer = ({ endDateTime }) => {
   const calculateTimeLeft = useCallback(() => {
@@ -7,11 +7,13 @@ const CountdownTimer = ({ endDateTime }) => {
     let time = {};
     if (difference > 0) {
       time = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        day: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hour: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        min: Math.floor((difference / 1000 / 60) % 60),
+        sec: Math.floor((difference / 1000) % 60),
       };
+    } else {
+      time = { day: 0, hour: 0, min: 0, sec: 0 }; // Все значения равны нулю после окончания таймера
     }
     return time;
   }, [endDateTime]);
@@ -26,16 +28,21 @@ const CountdownTimer = ({ endDateTime }) => {
     return () => clearInterval(timer);
   }, [calculateTimeLeft]);
 
+  // Функция для добавления ведущих нулей
+  const formatWithLeadingZero = (number) => String(number).padStart(2, '0');
+
   const timerComponents = Object.keys(timeLeft).map((interval) => (
-    <div className='time-box' key={interval}>
-      <span className='time-value'>{timeLeft[interval] || '0'}</span>
-      <span className='time-label'>{interval}</span>
+    <div className={css.countdownTimerBlock} key={interval}>
+      <span className={css.countdownTimerValue}>
+        {formatWithLeadingZero(timeLeft[interval] || 0)}
+      </span>
+      <span className={css.countdownTimerLabel}>{interval}</span>
     </div>
   ));
 
   return (
-    <div className='countdown-timer'>
-      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+    <div className={css.countdownTimer}>
+      {timerComponents.length ? timerComponents : <span>00:00:00:00</span>}
     </div>
   );
 };

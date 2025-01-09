@@ -1,11 +1,21 @@
 .architectureBackground {
   display: flex;
-  /* background-attachment: fixed; */
   width: 100%;
   height: 56.3vw;
   background: rgb(8, 13, 24);
   background: linear-gradient(115deg, rgba(8, 13, 24, 1) 0%, rgba(2, 8, 13, 1) 68%);
 
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/Screen-one-bg3.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
   position: relative;
   overflow: hidden;
+}
+
+.container {
+  width: 75vw;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
 }

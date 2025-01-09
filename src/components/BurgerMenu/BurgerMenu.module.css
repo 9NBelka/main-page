@@ -1,4 +1,5 @@
 .burgerIcon {
+  display: flex;
   cursor: pointer;
   z-index: 101;
   position: relative;

@@ -5,37 +5,6 @@ import { BsPersonFill, BsCartFill } from 'react-icons/bs';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { useEffect, useState } from 'react';
 
-const navMenuTextHeader = [
-  {
-    id: 1,
-    text: 'О чем?',
-  },
-  {
-    id: 2,
-    text: 'Для кого?',
-  },
-  {
-    id: 3,
-    text: 'Кто?',
-  },
-  {
-    id: 4,
-    text: 'Отзывы',
-  },
-  {
-    id: 5,
-    text: 'Программа',
-  },
-  {
-    id: 6,
-    text: 'Стоимость',
-  },
-  {
-    id: 7,
-    text: 'Блог',
-  },
-];
-
 export default function PagesHeader({ srcLogoArch }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -56,16 +25,46 @@ export default function PagesHeader({ srcLogoArch }) {
   return (
     <header className={clsx(css.header, `${isScrolled ? css.headerScrolled : ''}`)}>
       <nav className={css.headerNav}>
-        <img className={css.headerLogo} src={srcLogoArch} />
+        <div className={css.headerLogosAndButtonAnswer}>
+          <div>
+            <img className={css.headerLogo} src={srcLogoArch} />
+          </div>
+          <div>
+            <img
+              className={css.headerLogoUnity}
+              src='https://lms.k-syndicate.school/wp-content/uploads/2022/08/Unity-logo-new.png'
+            />
+          </div>
+          <h5 className={css.headerButtonAnswer}>Задать вопрос</h5>
+        </div>
         <ul className={css.headerNavText}>
-          {navMenuTextHeader.map((text) => (
-            <li key={text.id}>{text.text}</li>
-          ))}
+          <li>
+            <a href='#'>О чем?</a>
+          </li>
+
+          <li>
+            <a href='#'>Для кого?</a>
+          </li>
+
+          <li>
+            <a href='#'>Кто?</a>
+          </li>
+
+          <li>
+            <a href='#'>Отзывы</a>
+          </li>
+
+          <li>
+            <a href='#'>Программа</a>
+          </li>
+
+          <li>
+            <a href='#'>Стоимость</a>
+          </li>
+
+          <li>Блог</li>
         </ul>
         <ul className={css.headerList}>
-          {/* <li className={css.headerButton}>
-            <h4>Ask a question</h4>
-          </li> */}
           <li>
             <img
               className={css.headerIconFlag}

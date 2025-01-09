@@ -1,0 +1,42 @@
+.countdownTimer {
+  display: flex;
+  justify-content: center;
+
+  background: rgba(236, 236, 236, 0.03);
+  padding: 1.5vw 2.5vw;
+  border-radius: 1vw;
+  backdrop-filter: blur(0.5vw);
+  box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0;
+  gap: 1.5vw;
+  width: 15vw;
+}
+
+.countdownTimerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdownTimerValue {
+  display: flex;
+  font-size: 2.2vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+  text-shadow: black 0.2vw 0.1vw 0.1vw;
+  letter-spacing: 0.2vw;
+}
+
+.countdownTimerLabel {
+  display: flex;
+  font-size: 0.7vw;
+  color: #00afd2;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  text-shadow: 0 0 5px #00afd2, 0 8px 3px rgba(0, 176, 210, 0.2), 0 5px 15px #00afd2;
+}

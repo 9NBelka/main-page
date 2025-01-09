@@ -7,6 +7,7 @@
   transition: 0.5s;
   /* margin-top: 1.5vw; */
   /* transition: top 0.3s ease; */
+  box-shadow: 0vw 0.4vw 1.3vw black;
 }
 
 .headerScrolled {
@@ -18,13 +19,41 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5vw 4vw;
-  /* padding-right: 4vw; */
+  padding: 0vw 4vw;
   padding-right: 0;
 }
 
+.headerLogosAndButtonAnswer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5vw;
+}
+
 .headerLogo {
+  display: flex;
   width: 8.5vw;
+}
+
+.headerLogoUnity {
+  display: flex;
+  width: 1.5vw;
+}
+
+.headerButtonAnswer {
+  display: flex;
+  background-color: antiquewhite;
+  height: 100%;
+  padding: 1vw 2vw;
+  font-size: 0.8vw;
+  font-family: var(--font-helv-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  /* background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/08/background-button-answer.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%; */
 }
 
 .headerNavText {
@@ -34,18 +63,32 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 3vw;
+  gap: 0vw;
 }
 
+.headerNavText a,
 .headerNavText li {
   display: flex;
-  font-size: 0.85vw;
+  font-size: 0.8vw;
   font-family: var(--font-helv-medium);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-lineh-normal);
   color: white;
   transition: 0.3s;
   text-decoration: none;
+}
+
+.headerNavText a:hover {
+  opacity: 0.5;
+}
+
+.headerNavText li {
+  padding: 0 1.5vw;
+  border-left: 0.1vw solid rgba(70, 70, 70, 0.37);
+}
+
+.headerNavText li:first-child {
+  border: 0;
 }
 
 .headerList {
@@ -60,42 +103,20 @@
   padding-right: 2vw;
 }
 
-/* .headerButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2vw;
-  padding: 0 2vw;
-  border-radius: 0.5vw;
-  cursor: pointer;
-  background-color: rgb(0, 204, 204);
-  transition: all 0.6s ease;
-}
-
-.headerButton:hover {
-  box-shadow: 0px 0.1vw 1vw 0.1vw rgb(0, 204, 204);
-}
-
-.headerButton h4 {
-  display: flex;
-  font-family: var(--font-bios-bold);
-  font-weight: var(--font-weight-normal);
-  line-height: var(--font-lineh-normal);
-  color: black;
-  font-size: 0.9vw;
-} */
-
 .headerIconFlag {
+  display: flex;
   width: 1.3vw;
 }
 
 .headerIcons {
+  display: flex;
   fill: white;
   width: 1.1vw;
   height: 1.1vw;
 }
 
 .headerIconCart {
+  display: flex;
   width: 0.95vw;
   height: 0.95vw;
 }

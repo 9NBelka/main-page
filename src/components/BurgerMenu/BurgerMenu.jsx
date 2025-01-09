@@ -45,10 +45,7 @@ export default function BurgerMenu() {
       </div>
       <div ref={menuRef} className={clsx(css.menu, { [css.open]: isOpen })}>
         <div>
-          <img
-            className={css.menuLogo}
-            src='https://lms.k-syndicate.school/wp-content/uploads/2021/08/LogoB-1.png'
-          />
+          <img className={css.menuLogo} src='/src/assets/img/portal/KS logo variants crop.png' />
           <h5 className={css.menuListTitle}>Courses</h5>
           <ul className={css.menuList}>
             <li>

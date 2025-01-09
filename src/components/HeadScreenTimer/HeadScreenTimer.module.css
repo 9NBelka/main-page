@@ -1,0 +1,62 @@
+.countdownAndAnswerBlocks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.2vw;
+  gap: 3vw;
+}
+
+.countdownTimerBlockWithTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/timer-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 1.1vw;
+  padding: 0vw 2vw;
+}
+
+.countdownTimerTitle {
+  width: 22vw;
+  display: flex;
+  color: orange;
+  font-size: 1.7vw;
+  font-family: var(--font-helv-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  text-shadow: orange 0.05vw 0 0.25vw;
+}
+
+.answerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-one-button-block-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 1.1vw;
+  padding: 1.9vw 2vw;
+}
+
+.answerBlockTitle {
+  display: flex;
+  color: #02e1b8cd;
+  font-size: 1.1vw;
+  text-align: center;
+  font-family: var(--font-helv-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  width: 11vw;
+}
+
+.answerBlockImage {
+  display: flex;
+  width: 2vw;
+  margin-top: 0.5vw;
+}

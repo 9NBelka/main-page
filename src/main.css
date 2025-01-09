@@ -18,6 +18,16 @@ body {
   src: url(/src/assets/fonts/HelveticaNeueCyr-Medium.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+  font-family: ExanRegular; /* Гарнитура шрифта */
+  src: url(/src/assets/fonts/exan_regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: HelveticaRoman; /* Гарнитура шрифта */
+  src: url(/src/assets/fonts/HelveticaNeueCyr-Roman.ttf); /* Путь к файлу со шрифтом */
+}
+
 h1,
 h2,
 h3,
@@ -28,10 +38,16 @@ h6 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --font-bios-bold: 'Bios-Bold';
   --font-ibmp: 'IBMPlexSans-Light';
   --font-helv-medium: 'HelveticaNeueCyr-Medium';
+  --font-helv-roman: 'HelveticaRoman';
+  --font-ExanRegular: 'ExanRegular';
   --font-weight-normal: normal;
   --font-weight-bold: bold;
   --font-lineh-normal: 1.3em;
