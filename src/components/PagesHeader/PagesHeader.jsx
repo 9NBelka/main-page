@@ -30,12 +30,14 @@ export default function PagesHeader({ srcLogo }) {
             <img
               className={clsx(css.headerLogo, srcLogo.id == 1 ? css.headerLogoBig : css.headerLogo)}
               src={srcLogo.logoCourse}
+              alt='icon-logo'
             />
           </div>
           <div>
             <img
               className={css.headerLogoUnity}
               src='https://lms.k-syndicate.school/wp-content/uploads/2022/08/Unity-logo-new.png'
+              alt='icon-unity'
             />
           </div>
           <h5 className={css.headerButtonAnswer}>Задать вопрос</h5>
@@ -72,6 +74,7 @@ export default function PagesHeader({ srcLogo }) {
             <img
               className={css.headerIconFlag}
               src='http://portal.k-syndicate.school/img/main/Flag_UA.jpg'
+              alt='icon-flag'
             />
           </li>
           <li>

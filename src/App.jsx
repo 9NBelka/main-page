@@ -40,7 +40,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Portal />} />
         <Route path='/architecture' element={<Architecture currentInfo={currentInfo} />} />
-        <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />
+        <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </>
