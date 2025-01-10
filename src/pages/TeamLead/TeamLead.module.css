@@ -29,3 +29,13 @@
   background-size: cover;
   padding-bottom: 2vw;
 }
+
+.teamleadBackgroundSpeakers {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-new-design.webp);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
+}

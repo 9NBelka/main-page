@@ -24,6 +24,20 @@
       "https://lms.k-syndicate.school/wp-content/uploads/2022/09/description-block-image-two.png",
       "https://lms.k-syndicate.school/wp-content/uploads/2022/09/description-block-image-three.png",
       "https://lms.k-syndicate.school/wp-content/uploads/2022/09/description-block-image-four.png"
+    ],
+    "speakerScreen": [
+      {
+        "nameSpeaker": "Алексей Науменко",
+        "descriptionSpeaker": "12 лет опыта разработки\nCEO Black Tower Basement.\nВ прошлом: Unity Software Architect на\nRaid: Shadow Legends и также еще нескольких\n мобильных проектax мирового уровня.",
+        "linkedInSpeaker": "https://www.linkedin.com/in/oleksii-naumenko-0766bb59/",
+        "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-lexa-new.webp"
+      },
+      {
+        "nameSpeaker": "Екатерина Ревво",
+        "descriptionSpeaker": "10 лет опыта разработки и ведения проектной команды\n CTO Black Tower Basement\n В прошлом: Client Team Lead на Raid:\n Shadow Legends та Shadow Legends и нескольких\n других масштабных проектах (см. ниже).",
+        "linkedInSpeaker": "https://www.linkedin.com/in/kate-revvo-400721a8/",
+        "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-katya-new.webp"
+      }
     ]
   },
   {
@@ -51,6 +65,20 @@
       "https://lms.k-syndicate.school/wp-content/uploads/2022/10/description-block-image-two-teamlead.png",
       "https://lms.k-syndicate.school/wp-content/uploads/2022/10/description-block-image-three-teamlead.png",
       "https://lms.k-syndicate.school/wp-content/uploads/2022/10/description-block-image-four-teamlead.png"
+    ],
+    "speakerScreen": [
+      {
+        "nameSpeaker": "Алексей Науменко",
+        "descriptionSpeaker": "12 лет опыта разработки\nCEO Black Tower Basement.\nВ прошлом: Unity Software Architect на\nRaid: Shadow Legends и также еще нескольких\n мобильных проектax мирового уровня.",
+        "linkedInSpeaker": "https://www.linkedin.com/in/oleksii-naumenko-0766bb59/",
+        "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-lexa-new.webp"
+      },
+      {
+        "nameSpeaker": "Екатерина Ревво",
+        "descriptionSpeaker": "10 лет опыта разработки и ведения проектной команды\n CTO Black Tower Basement\n В прошлом: Client Team Lead на Raid:\n Shadow Legends та Shadow Legends и нескольких\n других масштабных проектах (см. ниже).",
+        "linkedInSpeaker": "https://www.linkedin.com/in/kate-revvo-400721a8/",
+        "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-katya-new.webp"
+      }
     ]
   }
 ]

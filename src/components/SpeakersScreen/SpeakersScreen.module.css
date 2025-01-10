@@ -1,0 +1,157 @@
+.speakersScreenPosition {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 75vw;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+}
+
+.speakersScreen {
+  display: flex;
+  padding-top: 7vw;
+}
+
+.speakerItem {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.speakerImage {
+  display: flex;
+  width: 39vw;
+}
+
+.speakersScreenBlock {
+  display: flex;
+}
+
+.speakerInfo {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 19%;
+  color: white;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.247);
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  backdrop-filter: blur(0.5vw);
+  /* box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0; */
+  z-index: 1;
+}
+
+.speakerListlinkedInButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.speakerItem:first-child .speakerInfo,
+.speakerItem:first-child .speakerListlinkedInButton {
+  justify-content: flex-start;
+  text-align: left;
+  left: 0;
+}
+
+.speakerList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.speakerName {
+  font-size: 1.9vw;
+  color: white;
+  font-family: var(--font-ArialBlack);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+}
+
+.speakerDescription {
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 0.5vw;
+}
+
+.speakerDescriptionLine {
+  display: block; /* Каждый span будет на отдельной строке */
+}
+
+.linkedInButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vw;
+  text-decoration: none;
+  padding: 0.5vw 0vw;
+  border-radius: 0.3vw;
+  background: #3fa314;
+  box-shadow: 0px 0.1vw 1.2vw 0.1vw #3fa314;
+  transition: 0.5s;
+  margin-top: 1vw;
+}
+
+.linkedInButton img {
+  width: 5vw;
+}
+
+.linkedInButton:hover {
+  transform: scale(0.95);
+}
+
+.speakerScreenLighting {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  z-index: 0;
+  width: 100vw;
+  animation: shadow-lighting 2s infinite alternate;
+}
+
+@keyframes shadow-lighting {
+  0% {
+    filter: drop-shadow(0 0 0.3vw #ffffff);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    filter: drop-shadow(0 0 1.5vw #ffffff);
+    transform: scale(1.003);
+    transform: translate3d(0vw, 0.1vw, 0);
+  }
+}
+
+.speakerScreenTopShadow {
+  width: 100vw;
+  height: 50vw;
+  position: absolute;
+  top: 0vw;
+  left: 0;
+  box-shadow: inset 0 3vw 2vw 0px black;
+  z-index: 2;
+}
+
+.speakerScreenBottomShadow {
+  width: 100vw;
+  height: 40vw;
+  position: absolute;
+  top: 12vw;
+  left: 0;
+  box-shadow: inset 0 -18vw 12vw 0px rgb(0, 15, 18);
+  z-index: 0;
+}

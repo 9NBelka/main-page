@@ -1,5 +1,6 @@
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
 import PagesHeader from '../../components/PagesHeader/PagesHeader';
+import SpeakersScreen from '../../components/SpeakersScreen/SpeakersScreen';
 import ViewCourseScreen from '../../components/ViewCourseScreen/ViewCourseScreen';
 import css from './Architecture.module.css';
 
@@ -16,6 +17,9 @@ export default function Architecture({ currentInfo }) {
         <div className={css.container}>
           <ViewCourseScreen currentInfo={currentInfo} />
         </div>
+      </div>
+      <div className={css.architectureBackgroundSpeakers}>
+        <SpeakersScreen currentInfo={currentInfo} />
       </div>
     </>
   );

@@ -11,7 +11,12 @@ export default function ViewCourseScreenVideo({ currentInfo }) {
             : css.viewCourseScreenVideo,
         )}>
         {currentInfo.viewCourseScreenVideos.map((video, index) => (
-          <iframe key={index} src={video} className={css.viewCourseScreenVideoIframe}></iframe>
+          <iframe
+            key={index}
+            src={video}
+            className={css.viewCourseScreenVideoIframe}
+            allow='autoplay; encrypted-media'
+            allowfullscreen></iframe>
         ))}
       </div>
     </>
