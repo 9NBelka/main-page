@@ -6,7 +6,7 @@ export default function HeadScreen({ currentInfo, endDateTime }) {
   return (
     <>
       <HeadScreenTitle currentInfo={currentInfo} />
-      <HeadScreenTimer styles={currentInfo} endDateTime={endDateTime} />
+      <HeadScreenTimer currentInfo={currentInfo} endDateTime={endDateTime} />
       <HeadScreenViewCourseText />
     </>
   );

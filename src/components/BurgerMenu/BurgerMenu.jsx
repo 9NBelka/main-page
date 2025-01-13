@@ -16,7 +16,7 @@ import {
 import css from './BurgerMenu.module.css';
 import { NavLink } from 'react-router-dom';
 
-export default function BurgerMenu() {
+export default function BurgerMenu({ isScrolled }) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Реф для меню
 
@@ -37,15 +37,24 @@ export default function BurgerMenu() {
   return (
     <>
       <div onClick={toggleMenu} className={css.burgerIcon}>
-        {isOpen ? (
-          <BsXLg className={clsx(css.headerIconBurger, css.headerIconBurgerClose)} />
-        ) : (
-          <BsList className={css.headerIconBurger} />
-        )}
+        <BsList className={css.headerIconBurger} />
       </div>
-      <div ref={menuRef} className={clsx(css.menu, { [css.open]: isOpen })}>
+      <div
+        ref={menuRef}
+        className={clsx(
+          css.menu,
+          { [css.open]: isOpen },
+          isScrolled ? css.menuPaddingTop : css.menu,
+        )}>
         <div>
-          <img className={css.menuLogo} src='/src/assets/img/portal/KS logo variants crop.png' />
+          <div
+            className={clsx(
+              css.menuLogoAndIcon,
+              isScrolled ? css.menuLogoAndIconMarginTop : css.menuLogoAndIcon,
+            )}>
+            <img className={css.menuLogo} src='/src/assets/img/portal/logoBurger.webp' />
+            <BsXLg onClick={toggleMenu} className={css.headerIconBurger} />
+          </div>
           <h5 className={css.menuListTitle}>Courses</h5>
           <ul className={css.menuList}>
             <li>
@@ -98,41 +107,8 @@ export default function BurgerMenu() {
               <h6 className={css.menuListNewCourse}>new</h6>
             </li>
           </ul>
-          <h5 className={css.menuListTitle}>social </h5>
-          <ul className={css.menuList}>
-            <li>
-              <div className={css.menuListIconSection}>
-                <BsTelegram className={css.menuListIcons} />
-                <a href='#section1'>Telegram</a>
-              </div>
-            </li>
-            <li>
-              <div className={css.menuListIconSection}>
-                <BsInstagram className={css.menuListIcons} />
-                <a href='#section2'>Instagram</a>
-              </div>
-            </li>
-            <li>
-              <div className={css.menuListIconSection}>
-                <BsYoutube className={css.menuListIcons} />
-                <a href='#section3'>Youtube</a>
-              </div>
-            </li>
-            <li>
-              <div className={css.menuListIconSection}>
-                <BsDiscord className={css.menuListIcons} />
-                <a href='#section3'>Discord</a>
-              </div>
-            </li>
-            <li>
-              <div className={css.menuListIconSection}>
-                <BsFacebook className={css.menuListIcons} />
-                <a href='#section3'>Facebook</a>
-              </div>
-            </li>
-          </ul>
         </div>
-        <div>
+        <div className={css.menuListIconsAnd}>
           <div className={css.menuListSocialIcons}>
             <BsTelegram className={css.menuListSocialIcon} />
             <BsInstagram className={css.menuListSocialIcon} />

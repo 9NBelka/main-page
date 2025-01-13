@@ -84,7 +84,7 @@ export default function PagesHeader({ srcLogo }) {
             <BsPersonFill className={css.headerIcons} />
           </li>
           <li>
-            <BurgerMenu />
+            <BurgerMenu isScrolled={isScrolled} />
           </li>
         </ul>
       </nav>

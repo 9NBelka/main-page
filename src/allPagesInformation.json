@@ -8,7 +8,8 @@
     "subNameCourse": "",
     "descriptionCourse": "Курс для того, кто имеет базовый навык в разработке, знания C# и хочет углубить свои представления об архитектуре игр в индустриальных подходах, да и вообще – о том, как эти игры делать.",
     "notificationCourse": "16 поток стартовал 2 декабря",
-    "endDateTime": "January 11, 2025 00:00:00",
+    "titleSalesOnTimer": "christmas sale заканчивается ЧЕРЕЗ:",
+    "endDateTime": "January 20, 2025 00:00:00",
     "viewCourseScreenVideos": [
       "https://www.youtube.com/embed/fIveNLynbMs?si=I8mqvwxklHUnxGxt",
       "https://www.youtube.com/embed/M6CDHfeY2tY?si=33uStYDnuX3KzgM_"
@@ -38,6 +39,40 @@
         "linkedInSpeaker": "https://www.linkedin.com/in/kate-revvo-400721a8/",
         "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-katya-new.webp"
       }
+    ],
+    "speakerScreenGeneralInformation": [
+      {
+        "generalInfo": "После ухода из Plarium в начале 2020 перешли к фулл-тайм реализации собственных идей и проектов (среди которых – эта школа :)).",
+        "generalInfoListTitle": "Спикеры курса имеют большой опыт публичных выступлений.",
+        "generalInfoList": [
+          {
+            "beforeLinkText": "доклад про ECS – ",
+            "linkText": "Unity, ECS и люди",
+            "afterLinkText": ""
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "DI + UNITY = ZENJECT ",
+            "afterLinkText": "| Dependency injection в Unity"
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "Рефакторинг кода в Unity-проектах",
+            "afterLinkText": "| Разрываем зависимости"
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "UNIT TESTING ",
+            "afterLinkText": "| Правильно внедряем unit-тесты в Unity проект"
+          }
+        ],
+        "generalInfoListLinks": [
+          "https://www.youtube.com/watch?v=4sDnBChfV0o",
+          "https://www.youtube.com/watch?v=mbuzSrKHBHI",
+          "https://www.youtube.com/watch?v=65Dp9Qmt_Hw",
+          "https://www.youtube.com/watch?v=6mkrxvyZp0Y"
+        ]
+      }
     ]
   },
   {
@@ -49,6 +84,7 @@
     "subNameCourse": "developers in gamedev",
     "descriptionCourse": "Мастер-класс о том, как не сойти с ума, став лидом, перестать чувствовать себя самозванцем и выжать из этой позиции максимум развития для себя и команды.",
     "notificationCourse": "",
+    "titleSalesOnTimer": "christmas sale заканчивается ЧЕРЕЗ:",
     "endDateTime": "February 20, 2025 00:00:00",
     "viewCourseScreenVideos": [
       "https://www.youtube.com/embed/0vEI9bZKpfA?si=18CFSq9xcsB2eYVF",
@@ -78,6 +114,40 @@
         "descriptionSpeaker": "10 лет опыта разработки и ведения проектной команды\n CTO Black Tower Basement\n В прошлом: Client Team Lead на Raid:\n Shadow Legends та Shadow Legends и нескольких\n других масштабных проектах (см. ниже).",
         "linkedInSpeaker": "https://www.linkedin.com/in/kate-revvo-400721a8/",
         "imageSpeaker": "https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-katya-new.webp"
+      }
+    ],
+    "speakerScreenGeneralInformation": [
+      {
+        "generalInfo": "После ухода из Plarium в начале 2020 перешли к фулл-тайм реализации собственных идей и проектов (среди которых – эта школа :)).",
+        "generalInfoListTitle": "Спикеры курса имеют большой опыт публичных выступлений.",
+        "generalInfoList": [
+          {
+            "beforeLinkText": "доклад про ECS – ",
+            "linkText": "Unity, ECS и люди",
+            "afterLinkText": ""
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "DI + UNITY = ZENJECT ",
+            "afterLinkText": "| Dependency injection в Unity"
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "Рефакторинг кода в Unity-проектах",
+            "afterLinkText": "| Разрываем зависимости"
+          },
+          {
+            "beforeLinkText": "",
+            "linkText": "UNIT TESTING ",
+            "afterLinkText": "| Правильно внедряем unit-тесты в Unity проект"
+          }
+        ],
+        "generalInfoListLinks": [
+          "https://www.youtube.com/watch?v=4sDnBChfV0o",
+          "https://www.youtube.com/watch?v=mbuzSrKHBHI",
+          "https://www.youtube.com/watch?v=65Dp9Qmt_Hw",
+          "https://www.youtube.com/watch?v=6mkrxvyZp0Y"
+        ]
       }
     ]
   }

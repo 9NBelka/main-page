@@ -1,0 +1,58 @@
+.speakersScreenGeneral {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 15, 18);
+}
+
+.speakersScreenGeneralBlock {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.speakersScreenGeneralBlock p {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin: 0;
+  padding: 0;
+  margin-top: 1vw;
+}
+
+.speakersScreenGeneralListTitle {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin: 0;
+  padding: 0;
+  margin-top: 1vw;
+}
+
+.speakersScreenGeneralList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.speakersScreenGeneralList li {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 0.2vw;
+}
+
+.generalInfoLink {
+  text-decoration: none;
+  color: var(--color-for-architecture);
+  text-decoration: underline;
+}
+
+.generalInfoLinkTeamLead {
+  color: var(--color-for-teamlead);
+}

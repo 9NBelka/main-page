@@ -1,14 +1,11 @@
 import clsx from 'clsx';
 import css from './SpeakersScreen.module.css';
+import SpeakersScreenGeneralInformation from '../SpeakersScreenGeneralInformation/SpeakersScreenGeneralInformation';
 
 export default function SpeakersScreen({ currentInfo }) {
   return (
     <div className={css.speakersScreenPosition}>
       <div className={css.speakerScreenTopShadow}></div>
-      <img
-        className={css.speakerScreenLighting}
-        src='https://lms.k-syndicate.school/wp-content/uploads/2024/07/lighting.png'
-      />
       <div className={css.container}>
         <div className={css.speakersScreen}>
           {currentInfo.speakerScreen.map((speaker, index) => (
@@ -46,6 +43,7 @@ export default function SpeakersScreen({ currentInfo }) {
             </div>
           ))}
         </div>
+        <SpeakersScreenGeneralInformation generalInfo={currentInfo} />
       </div>
       <div className={css.speakerScreenBottomShadow}></div>
     </div>
