@@ -16,7 +16,7 @@ export default function ViewCourseScreenVideo({ currentInfo }) {
             src={video}
             className={css.viewCourseScreenVideoIframe}
             allow='autoplay; encrypted-media'
-            allowfullscreen></iframe>
+            allowFullScreen></iframe>
         ))}
       </div>
     </>
