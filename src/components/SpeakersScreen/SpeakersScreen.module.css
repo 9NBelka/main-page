@@ -38,14 +38,14 @@
   display: flex;
   position: absolute;
   bottom: 0;
-  left: 19%;
+  left: 17%;
   color: white;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.247);
   padding: 1vw 2vw;
   border-radius: 1vw;
   backdrop-filter: blur(0.5vw);
-  /* box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0; */
+  box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0;
   z-index: 1;
 }
 
@@ -59,6 +59,11 @@
   justify-content: flex-start;
   text-align: left;
   left: 0;
+}
+
+.speakerItem:first-child .speakerInfo {
+  margin-right: 0;
+  margin-left: 1.5vw;
 }
 
 .speakerList {
@@ -101,10 +106,15 @@
   text-decoration: none;
   padding: 0.5vw 0vw;
   border-radius: 0.3vw;
-  background: #3fa314;
-  box-shadow: 0px 0.1vw 1.2vw 0.1vw #3fa314;
+  background: var(--color-for-architecture);
+  box-shadow: 0px 0.1vw 1.2vw 0.1vw var(--color-for-architecture);
   transition: 0.5s;
   margin-top: 1vw;
+}
+
+.linkedInButtonTeamLead {
+  background: var(--color-for-teamlead);
+  box-shadow: 0px 0.1vw 1.2vw 0.1vw var(--color-for-teamlead);
 }
 
 .linkedInButton img {

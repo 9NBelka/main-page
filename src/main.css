@@ -59,4 +59,7 @@ a {
   --font-weight-bold: bold;
   --font-lineh-normal: 1.3em;
   --font-lineh-small: 1.2em;
+  --color-for-notification: #60ff00;
+  --color-for-architecture: #3fa314;
+  --color-for-teamlead: #a74199;
 }

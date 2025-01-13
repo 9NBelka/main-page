@@ -41,7 +41,7 @@
 .notification {
   display: flex;
   font-size: 1.4vw;
-  color: #60ff00;
+  color: var(--color-for-notification);
   font-family: var(--font-helv-medium);
   font-weight: var(--font-weight-normal);
   line-height: var(--font-lineh-normal);

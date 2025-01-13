@@ -68,7 +68,7 @@
 }
 
 .answerBlockTitleTeamLead {
-  color: #a74199;
+  color: var(--color-for-teamlead);
 }
 
 .answerBlockIcons {
@@ -82,5 +82,5 @@
 }
 
 .answerBlockIconsTeamLead {
-  fill: #a74199;
+  fill: var(--color-for-teamlead);
 }

@@ -12,7 +12,7 @@
 }
 
 .countdownTimerTeamLead {
-  box-shadow: 0 0 0.7vw 0 #832d78, 0 0 0.2vw 0 #7e2172;
+  box-shadow: 0 0 0.7vw 0 var(--color-for-teamlead), 0 0 0.2vw 0 var(--color-for-teamlead);
 }
 
 .countdownTimerBlock {
@@ -42,10 +42,11 @@
   line-height: var(--font-lineh-normal);
   text-transform: uppercase;
   letter-spacing: 0.1vw;
-  text-shadow: 0 0 5px #00afd2, 0 8px 3px rgba(0, 176, 210, 0.2), 0 5px 15px #00afd2;
+  text-shadow: 0 0 0.2vw #00afd2, 0 0.4vw 0.1vw rgba(0, 176, 210, 0.3), 0 0.2vw 0.75vw #00afd2;
 }
 
 .countdownTimerLabelTeamLead {
-  color: #c395b1;
-  text-shadow: 0 0 5px #832d78, 0 8px 3px rgba(131, 46, 120, 0.2), 0 5px 15px #832d78;
+  color: var(--color-for-teamlead);
+  text-shadow: 0 0 0.2vw var(--color-for-teamlead), 0 0.4vw 0.1vw rgba(131, 46, 120, 0.3),
+    0 0.2vw 0.75vw var(--color-for-teamlead);
 }

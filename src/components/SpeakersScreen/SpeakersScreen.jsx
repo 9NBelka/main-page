@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import css from './SpeakersScreen.module.css';
 
 export default function SpeakersScreen({ currentInfo }) {
@@ -33,7 +34,10 @@ export default function SpeakersScreen({ currentInfo }) {
                     <a
                       href={speaker.linkedInSpeaker}
                       target='_blank'
-                      className={css.linkedInButton}>
+                      className={clsx(
+                        css.linkedInButton,
+                        currentInfo.id == 1 ? css.linkedInButtonTeamLead : css.linkedInButton,
+                      )}>
                       <img src='https://lms.k-syndicate.school/wp-content/uploads/2024/02/linkedIn-esc.png' />
                     </a>
                   </li>
