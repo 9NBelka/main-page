@@ -2,7 +2,7 @@
   {
     "id": 0,
     "path": "/architecture",
-    "logoCourse": "/src/assets/img/architecture/ArchLogo.png",
+    "logoCourse": "../src/assets/img/architecture/ArchLogo.png",
     "categoryCourse": "Course",
     "nameCourse": "ARCHITECTURE UNITY GAMES",
     "subNameCourse": "",

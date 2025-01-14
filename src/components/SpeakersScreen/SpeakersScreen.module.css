@@ -45,7 +45,7 @@
   padding: 1vw 2vw;
   border-radius: 1vw;
   backdrop-filter: blur(0.5vw);
-  box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0;
+  /* box-shadow: 0 0 0.7vw 0 #00afd2, 0 0 0.2vw 0 #0741e0; */
   z-index: 1;
 }
 
