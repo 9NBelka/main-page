@@ -1,0 +1,73 @@
+.forWhomScreenText {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+}
+
+.forWhomScreenImageAndList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+
+.forWhomScreenImageAndList img {
+  width: 22vw;
+}
+
+.forCourseScreenTextAndList {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+.forWhomScreenTitle {
+  font-size: 1.2vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+}
+
+.forWhomScreenTitleMargin {
+  margin-top: 2vw;
+}
+
+.forWhomScreenSubTitle {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 1vw;
+}
+
+.forWhomScreenList {
+  margin: 0;
+  padding: 0;
+  margin-top: 1vw;
+  padding-left: 1vw;
+}
+
+.forWhomScreenList li {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+}
+
+.forCourseScreenText {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin: 0;
+}
+
+.forCourseScreenTextMargin {
+  margin-top: 1vw;
+}

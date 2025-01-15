@@ -1,7 +1,23 @@
+.titleScreen {
+  background-color: black;
+}
+
+.titleScreenText {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  color: white;
+  font-family: var(--font-helv-medium);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
 .architectureBackground {
   display: flex;
   width: 100%;
-
   background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/Screen-one-bg3.jpg);
   background-repeat: no-repeat;
   background-position-y: top center;
@@ -22,7 +38,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-
   background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-two-bg-two.jpg);
   background-repeat: no-repeat;
   background-position-y: top center;
@@ -30,11 +45,36 @@
   padding-bottom: 2vw;
 }
 
+.architectureBackgroundForWhom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2023/11/screen-three-background.webp);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
+  padding-bottom: 2vw;
+  background-color: black;
+}
+
 .architectureBackgroundSpeakers {
   display: flex;
   justify-content: center;
   width: 100%;
   background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2024/07/spikers-new-design.webp);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
+  padding-bottom: 2vw;
+}
+
+.architectureBackgroundReview {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2024/08/feedbacks-main-background-architecture.webp);
   background-repeat: no-repeat;
   background-position-y: top center;
   background-size: cover;

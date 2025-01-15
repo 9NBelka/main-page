@@ -1,0 +1,27 @@
+.forWhomScreen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forWhomScreenList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+}
+
+.forWhomScreenImage {
+  display: flex;
+  /* width: 20vw; */
+}
+
+.forWhomScreenList li {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 1.5vw;
+}

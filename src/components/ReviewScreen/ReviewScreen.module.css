@@ -1,0 +1,128 @@
+.sliderReview {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0c0d;
+  border-radius: 0.8vw;
+  padding: 2.5vw 3vw;
+  border: 0.05vw solid var(--color-for-architecture);
+}
+
+.sliderReviewTeamLead {
+  border: 0.05vw solid var(--color-for-teamlead);
+}
+
+.sliderReviewNavigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7vw;
+}
+
+.sliderReviewNavigationButton {
+  display: flex;
+  background-color: var(--color-for-architecture);
+  border-radius: 0.5vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0vw;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sliderReviewNavigationButtonTeamLead {
+  background-color: var(--color-for-teamlead);
+}
+
+.sliderReviewNavigationButtonIcon {
+  width: 2vw;
+  height: 2vw;
+}
+
+.sliderReviewNavigationButton:hover {
+  background-color: #007e01;
+}
+
+.sliderReviewNavigationButtonTeamLead:hover {
+  background-color: #8a1f86;
+}
+
+.sliderReviewNavigationButton:disabled {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
+
+.sliderReviewPagesNumbs {
+  font-size: 1.1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin: 0;
+}
+
+.sliderReviewBlock {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 8vw;
+  touch-action: pan-y;
+  margin-top: 1vw;
+}
+
+.sliderReviewName {
+  font-size: 1.6vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 1vw;
+}
+
+.sliderReviewText {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  max-height: 8vw;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  padding-right: 4vw;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+.sliderReviewText::-webkit-scrollbar-thumb {
+  border-radius: 1vw;
+  background-color: var(--color-for-architecture);
+}
+
+.sliderReviewTextTeamLead::-webkit-scrollbar-thumb {
+  border-radius: 1vw;
+  background-color: var(--color-for-teamlead);
+}
+
+.sliderReviewText::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.2vw rgba(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sliderReviewText::-webkit-scrollbar {
+  width: 0.34vw;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sliderReviewData {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  opacity: 0.5;
+  margin: 0;
+  margin-top: 1vw;
+}

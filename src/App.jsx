@@ -36,13 +36,11 @@ export default function App() {
   const currentInfo = info.find((item) => item.id === courseId);
 
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Portal />} />
-        <Route path='/architecture' element={<Architecture currentInfo={currentInfo} />} />
-        <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path='/' element={<Portal />} />
+      <Route path='/architecture' element={<Architecture currentInfo={currentInfo} />} />
+      <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
+      <Route path='*' element={<NotFoundPage />} />
+    </Routes>
   );
 }
