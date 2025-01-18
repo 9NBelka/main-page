@@ -156,7 +156,11 @@
       "linkOnGameSteam": "https://store.steampowered.com/app/1895820/Greedventory/",
       "linkOnGameGog": "https://www.gog.com/en/game/greedventory",
       "studioGame": "Первый проект инди-студии наших спикеров Black Tower Basement.",
-      "descriptionGame": "От пет-проекта до релиза он пережил множество трансформаций, и проверил на себе архитектуру, о которой мы рассказываем в курсах."
+      "descriptionGame": "От пет-проекта до релиза он пережил множество трансформаций, и проверил на себе архитектуру, о которой мы рассказываем в курсах.",
+      "bestInnovation": "Dev.Play 2023 - Best Innovation",
+      "bestInnovationLink": "/src/assets/img/general/innovation.jpg",
+      "bestGameOfTheShow": "Dev.Play 2023 - Best Game of the Show",
+      "bestGameOfTheShowLink": "/src/assets/img/general/gameoftheshow.jpg"
     }
   },
   {
@@ -324,7 +328,11 @@
       "linkOnGameSteam": "https://store.steampowered.com/app/1895820/Greedventory/",
       "linkOnGameGog": "https://www.gog.com/en/game/greedventory",
       "studioGame": "Первый проект инди-студии наших спикеров Black Tower Basement.",
-      "descriptionGame": "От пет-проекта до релиза он пережил множество трансформаций, и проверил на себе архитектуру, о которой мы рассказываем в курсах."
+      "descriptionGame": "От пет-проекта до релиза он пережил множество трансформаций, и проверил на себе архитектуру, о которой мы рассказываем в курсах.",
+      "bestInnovation": "Dev.Play 2023 - Best Innovation",
+      "bestInnovationLink": "/src/assets/img/general/innovation.jpg",
+      "bestGameOfTheShow": "Dev.Play 2023 - Best Game of the Show",
+      "bestGameOfTheShowLink": "/src/assets/img/general/gameoftheshow.jpg"
     }
   }
 ]
