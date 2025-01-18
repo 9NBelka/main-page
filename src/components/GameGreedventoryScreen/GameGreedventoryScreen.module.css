@@ -1,0 +1,57 @@
+.gameGreedventoryScreen {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+}
+
+.gamesScreenGeneralTextMarker {
+  font-size: 0.7vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+}
+
+.gameGreedventoryScreenImageAndText {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+  gap: 2vw;
+}
+
+.gameGreedventoryScreenImage {
+  width: 45%;
+}
+
+.gameGreedventoryScreenTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.nameGame {
+  font-size: 1vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+}
+
+.gameText {
+  font-size: 0.9vw;
+  color: white;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+}
+
+.gameGreedventoryScreenLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+
+.gameGreedventoryScreenLinks a {
+  text-decoration: underline;
+  color: white;
+}

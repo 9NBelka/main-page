@@ -57,8 +57,9 @@
   background-repeat: no-repeat;
   background-position-y: top center;
   background-size: cover;
-  padding-bottom: 2vw;
+  padding-bottom: 3vw;
   background-color: black;
+  box-shadow: inset 0 -1.5vw 2vw 0px black;
 }
 
 .teamleadBackgroundSpeakers {
@@ -81,5 +82,19 @@
   background-repeat: no-repeat;
   background-position-y: top center;
   background-size: cover;
+  padding-bottom: 3vw;
+  box-shadow: inset 0 -1.5vw 2vw 0px black;
+}
+
+.teamleadBackgroundGames {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2023/11/screen-six-background.webp);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
   padding-bottom: 2vw;
+  box-shadow: inset 0 1.5vw 2vw 0px black;
 }

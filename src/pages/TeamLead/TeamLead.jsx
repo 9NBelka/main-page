@@ -1,4 +1,5 @@
 import ForWhomScreenTwoVersion from '../../components/ForWhomScreenTwoVersion/ForWhomScreenTwoVersion';
+import GameFourScreen from '../../components/GameFourScreen/GameFourScreen';
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
 import PagesHeader from '../../components/PagesHeader/PagesHeader';
 import ReviewScreen from '../../components/ReviewScreen/ReviewScreen';
@@ -38,6 +39,14 @@ export default function TeamLead({ currentInfo }) {
         <h3 className={css.titleScreenText}>ОТЗЫВЫ</h3>
         <div className={css.container}>
           <ReviewScreen reviews={reviewsTeamLead} currentInfo={currentInfo} />
+        </div>
+      </div>
+      <div className={css.titleScreen}>
+        <h3 className={css.titleScreenText}>мы работали над:</h3>
+      </div>
+      <div className={css.teamleadBackgroundGames}>
+        <div className={css.container}>
+          <GameFourScreen currentInfo={currentInfo} />
         </div>
       </div>
     </>
