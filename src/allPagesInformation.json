@@ -161,7 +161,86 @@
       "bestInnovationLink": "/src/assets/img/general/innovation.jpg",
       "bestGameOfTheShow": "Dev.Play 2023 - Best Game of the Show",
       "bestGameOfTheShowLink": "/src/assets/img/general/gameoftheshow.jpg"
-    }
+    },
+    "insideScreen": [
+      {
+        "insideScreenTitle": "Настройка окружения для работы",
+        "insideScreenContent": "Установим конкретную версию Unity. В курсе понадобится Rider или в крайнем случае Visual Studio + Resharper. Большой упор сделан на совершенствование навыков в этих индустриальных инструментах.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka1.png"
+      },
+      {
+        "insideScreenTitle": "Разберемся с Entry Point-ом и начнем общую архитектуру состояний игры",
+        "insideScreenContent": "Никаких синглтонов! Рассмотрим подход к управлению состояниями игры-приложения и организуем удобный запуск и прогрев всех нужных ее частей.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka3.png"
+      },
+      {
+        "insideScreenTitle": "Сохранение прогресса и организация доступа к данным игрока (save\\load)",
+        "insideScreenContent": "Организуем один из удобных способов сохранить и загрузить\\обновить данные о прогрессе и состоянии игрока. При этом получим специальное место для этого и избежим проблем порядка инициализации.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka5.png"
+      },
+      {
+        "insideScreenTitle": "Компонентная модель",
+        "insideScreenContent": "Пристально посмотрим на компонентный подход (Component model) к разработке и разберемся, как Unity хочет, чтобы мы строили игры (из маленьких компонентов без центрального контроллера). Опробуем этот подход на примере наших врагов.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka7.png"
+      },
+      {
+        "insideScreenTitle": "Статические данные. Доступ в коде к балансу и прочим конфигурациям игры",
+        "insideScreenContent": "Разберем как в проектах с частыми обновлениями хранят, загружают и, собственно, обновляют баланс игры (параметры врагов, уровней и тп). Рассмотрим несколько форматов хранения (Json, binary, ScriptableObject) и реализуем один из них.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka9.png"
+      },
+      {
+        "insideScreenTitle": "UI. Соберем несколько окон по универсальным гайдлайнам",
+        "insideScreenContent": "Обсудим индустриальные подходы и нюансы сборки динамического и адаптивного UI, используя Unity UI, особенности мобильных экранов (например, safe area). Соберем world space и screen space UI.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka11.png"
+      },
+      {
+        "insideScreenTitle": "Подключим рекламу (Unity Ads) и внутриигровые покупки (In-app purchases)",
+        "insideScreenContent": "Поговорим о способах монетизации Free-to-play игр, подключим модули рекламы и внутриигровых покупок, посмотрим на управление внутриигровыми покупками через Unity Dashboard и сторы.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka13.png"
+      },
+      {
+        "insideScreenTitle": "Соберем билды на устройства",
+        "insideScreenContent": "Каждая уважающая себя команда разработки должна настроить инфраструктуру постоянной сборки и тестирования билдов (CI). Выясним, для чего и как.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka15.png"
+      }
+    ],
+    "insideScreenTwo": [
+      {
+        "insideScreenTitle": "Добавим персонажа, чтобы было кем управлять и реализуем Input-систему",
+        "insideScreenContent": "Чтобы было как управлять. В редакторе и на мобильных устройствах.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka2.png"
+      },
+      {
+        "insideScreenTitle": "А как же без Dependency Injection?",
+        "insideScreenContent": "Напишем простейший DI-фреймворк для доступа к частям игры (сервисам), поговорим о том, почему это нужно, и постепенно будем его совершенствовать.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka4.png"
+      },
+      {
+        "insideScreenTitle": "Враги и их друзья",
+        "insideScreenContent": "Заставим NavmeshAgent искать путь на уровне с препятствиями. Научим врагов шевелиться, атаковать и преследовать. Запустим анимации из кода и код из анимаций (Animator, Animation events, импорт анимаций).",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka6.png"
+      },
+      {
+        "insideScreenTitle": "Расширим редактор Unity своими инструментами",
+        "insideScreenContent": "Упростим себе жизнь и левел-дизайн с помощью Gizmos и других инструментов (UnityEditor tools).",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka8.png"
+      },
+      {
+        "insideScreenTitle": "Усовершенствуем и отрефакторим ранее созданную фабрику игровых сущностей и DI",
+        "insideScreenContent": "Рефакторинг - важная часть любой разработки, вот и мы устроим рефакторинг-сессию. Поговорим про итеративный подход, приведем в финальный вид для этого проекта ранее созданные модули.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka10.png"
+      },
+      {
+        "insideScreenTitle": "Управление и доступ к ресурсам игры. Addressables",
+        "insideScreenContent": "На мобильных проектах с частыми обновлениями управление ресурсами и их догрузка - выделенная серьезная задача. Разберем способы упаковки и скачивания ресурсов, которые предлагает Unity (asset bundles, Adressables), реализуем сервис асинхронного (async\\await) доступа к ресурсам.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka12.png"
+      },
+      {
+        "insideScreenTitle": "Удобно организуем загрузку сцен и уровней",
+        "insideScreenContent": "Устали от проблем выгрузки, загрузки и порядка инициализации? Сейчас время это исправить.",
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka14.png"
+      }
+    ]
   },
   {
     "id": 1,
@@ -333,6 +412,20 @@
       "bestInnovationLink": "/src/assets/img/general/innovation.jpg",
       "bestGameOfTheShow": "Dev.Play 2023 - Best Game of the Show",
       "bestGameOfTheShowLink": "/src/assets/img/general/gameoftheshow.jpg"
-    }
+    },
+    "insideScreen": [
+      {
+        "insideScreenTitle": "Заголовок 1",
+        "insideScreenContent": "Текст для раскрытия 1"
+      },
+      {
+        "insideScreenTitle": "Заголовок 2",
+        "insideScreenContent": "Текст для раскрытия 2"
+      },
+      {
+        "insideScreenTitle": "Заголовок 3",
+        "insideScreenContent": "Текст для раскрытия 3"
+      }
+    ]
   }
 ]
