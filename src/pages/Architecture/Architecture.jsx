@@ -1,3 +1,4 @@
+import CostScreen from '../../components/CostScreen/CostScreen';
 import DemoVideosScreen from '../../components/DemoVideosScreen/DemoVideosScreen';
 import ForWhomScreen from '../../components/ForWhomScreen/ForWhomScreen';
 import GameFourScreen from '../../components/GameFourScreen/GameFourScreen';
@@ -11,7 +12,7 @@ import ViewCourseScreen from '../../components/ViewCourseScreen/ViewCourseScreen
 import reviewsArchi from '../../review-jsons/review-architecture.json';
 import css from './Architecture.module.css';
 
-export default function Architecture({ currentInfo }) {
+export default function Architecture({ currentInfo, currentInfoProduct }) {
   return (
     <>
       <div className={css.architectureBackground}>
@@ -64,6 +65,7 @@ export default function Architecture({ currentInfo }) {
           <DemoVideosScreen currentInfo={currentInfo} />
         </div>
       </div>
+      <CostScreen currentInfoProduct={currentInfoProduct} />
     </>
   );
 }

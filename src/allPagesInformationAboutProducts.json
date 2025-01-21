@@ -1,0 +1,48 @@
+[
+  {
+    "productCourseArchitecture": {
+      "id": 0,
+      "productCourseName": "Architecture",
+      "productCourseCategory": "Course",
+      "productCourseVersion": ["Vanilla", "Standart"],
+      "productCourseSpeakers": ["Oleksii Naumenko", "Kateryna Revvo"],
+      "productCourseImages": [
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-one-vanilla.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-one.png"
+      ],
+      "productCourseAmountVideos": "145",
+      "productCourseAmountStudents": "325",
+      "productCourseAmountTimes": "16h 40m",
+      "productCourseBuyNow": [],
+      "productCourseMoreInfo": "",
+      "productCourseDiscounts": [
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png"
+      ],
+      "productCoursePrices": []
+    },
+    "productCourseTeamLead": {
+      "id": 1,
+      "productCourseName": "Team Lead",
+      "productCourseCategory": "MasterClass",
+      "productCourseVersion": ["Vanilla", "Standart", "Advanced"],
+      "productCourseSpeakers": ["Oleksii Naumenko", "Kateryna Revvo"],
+      "productCourseImages": [
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-two.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-three-teamleadd.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-one-teamleadd.png"
+      ],
+      "productCourseAmountVideos": "16",
+      "productCourseAmountStudents": "82",
+      "productCourseAmountTimes": "1h 45m",
+      "productCourseBuyNow": [],
+      "productCourseMoreInfo": "",
+      "productCourseDiscounts": [
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png"
+      ],
+      "productCoursePrices": []
+    }
+  }
+]

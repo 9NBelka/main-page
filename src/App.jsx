@@ -2,6 +2,7 @@ import Portal from './pages/Portal/Portal';
 import { Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import info from './allPagesInformation.json';
+import infoAboutProduct from './allPagesInformationAboutProducts.json';
 
 import Architecture from './pages/Architecture/Architecture';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
@@ -35,10 +36,17 @@ export default function App() {
   // Находим информацию о курсе по id
   const currentInfo = info.find((item) => item.id === courseId);
 
+  const currentInfoProduct = infoAboutProduct
+    .flatMap((product) => Object.values(product)) // Разворачиваем вложенные объекты
+    .find((item) => item.id === courseId); // Ищем по id
+
   return (
     <Routes>
       <Route path='/' element={<Portal />} />
-      <Route path='/architecture' element={<Architecture currentInfo={currentInfo} />} />
+      <Route
+        path='/architecture'
+        element={<Architecture currentInfo={currentInfo} currentInfoProduct={currentInfoProduct} />}
+      />
       <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
