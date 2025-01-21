@@ -98,3 +98,16 @@
   padding-bottom: 2vw;
   box-shadow: inset 0 1.5vw 2vw 0px black;
 }
+
+.teamleadBackgroundWhatInside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 35vw;
+  width: 100%;
+  background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-seven-background-two.jpg);
+  background-repeat: no-repeat;
+  background-position-y: top center;
+  background-size: cover;
+  box-shadow: inset 0 1.5vw 2vw 0px black;
+}

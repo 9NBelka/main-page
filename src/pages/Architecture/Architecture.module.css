@@ -100,11 +100,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 62vw;
   width: 100%;
   background-image: url(https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-background-two.jpg);
   background-repeat: no-repeat;
   background-position-y: top center;
   background-size: cover;
-  padding-bottom: 10vw;
   box-shadow: inset 0 1.5vw 2vw 0px black;
+}
+
+.architectureBackgroundDemoVideos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 2vw;
 }

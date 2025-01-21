@@ -33,19 +33,27 @@ export default function InsideScreen({ currentInfo }) {
             style={{ backgroundImage: `url(${info.insideScreenBackImage})` }}>
             <div className={css.insideScreenHeaderTitle} onClick={() => toggleSpoiler(1, index)}>
               <h3 className={css.insideScreenTitle}>{info.insideScreenTitle}</h3>
-              <span>
-                {activeIndexColumn1 === index ? (
-                  <BsFillDashSquareFill className={css.insideScreenIcon} />
-                ) : (
-                  <BsFillPlusSquareFill className={css.insideScreenIcon} />
-                )}
-              </span>
+              {activeIndexColumn1 === index ? (
+                <BsFillDashSquareFill className={css.insideScreenIcon} />
+              ) : (
+                <BsFillPlusSquareFill className={css.insideScreenIcon} />
+              )}
             </div>
             <div
               className={`${css.insideScreenContent} ${
                 activeIndexColumn1 === index ? css.open : css.closed
               }`}>
-              <h5 className={css.insideScreenContentText}>{info.insideScreenContent}</h5>
+              {currentInfo.id === 0 ? (
+                <h5 className={css.insideScreenContentText}>{info.insideScreenContent}</h5>
+              ) : (
+                <ul className={css.insideScreenContentListText}>
+                  {info.insideScreenContent.map((list, index) => (
+                    <li className={css.insideScreenContentText} key={index}>
+                      {list}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}
@@ -61,19 +69,27 @@ export default function InsideScreen({ currentInfo }) {
             style={{ backgroundImage: `url(${info.insideScreenBackImage})` }}>
             <div className={css.insideScreenHeaderTitle} onClick={() => toggleSpoiler(2, index)}>
               <h3 className={css.insideScreenTitle}>{info.insideScreenTitle}</h3>
-              <span>
-                {activeIndexColumn2 === index ? (
-                  <BsFillDashSquareFill className={css.insideScreenIcon} />
-                ) : (
-                  <BsFillPlusSquareFill className={css.insideScreenIcon} />
-                )}
-              </span>
+              {activeIndexColumn2 === index ? (
+                <BsFillDashSquareFill className={css.insideScreenIcon} />
+              ) : (
+                <BsFillPlusSquareFill className={css.insideScreenIcon} />
+              )}
             </div>
             <div
               className={`${css.insideScreenContent} ${
                 activeIndexColumn2 === index ? css.open : css.closed
               }`}>
-              <h5 className={css.insideScreenContentText}>{info.insideScreenContent}</h5>
+              {currentInfo.id === 0 ? (
+                <h5 className={css.insideScreenContentText}>{info.insideScreenContent}</h5>
+              ) : (
+                <ul className={css.insideScreenContentListText}>
+                  {info.insideScreenContent.map((list, index) => (
+                    <li className={css.insideScreenContentText} key={index}>
+                      {list}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}

@@ -240,6 +240,14 @@
         "insideScreenContent": "Устали от проблем выгрузки, загрузки и порядка инициализации? Сейчас время это исправить.",
         "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-seven-plashka14.png"
       }
+    ],
+    "demoVideos": [
+      "https://www.youtube.com/embed/po8UTUzi8dM",
+      "https://www.youtube.com/embed/cJFNRyG0sKA",
+      "https://www.youtube.com/embed/M7CRZ3UChXM",
+      "https://www.youtube.com/embed/QwlbqQLw95A",
+      "https://www.youtube.com/embed/RgofmP7BouU",
+      "https://www.youtube.com/embed/4EoX0Ir_fUI"
     ]
   },
   {
@@ -415,16 +423,48 @@
     },
     "insideScreen": [
       {
-        "insideScreenTitle": "Заголовок 1",
-        "insideScreenContent": "Текст для раскрытия 1"
+        "insideScreenTitle": "Я СТАЛ ЛИДОМ, ЧТО ДАЛЬШЕ? В частности:",
+        "insideScreenContent": [
+          "функции лида, задачи и возможности",
+          "распределение времени",
+          "как развиваться дальше технически"
+        ],
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-seven-plashka1-teamlead.png"
       },
       {
-        "insideScreenTitle": "Заголовок 2",
-        "insideScreenContent": "Текст для раскрытия 2"
+        "insideScreenTitle": "УПРАВЛЕНИЕ РЕСУРСАМИ И ПРОЦЕССЫ, вот, скажем:",
+        "insideScreenContent": [
+          "git-flow",
+          "код-ревью",
+          "парное программирование",
+          "управление командой с разным уровнем скилла",
+          "менторство и адаптация новичков",
+          "развитие членов команды",
+          "распределение задач"
+        ],
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-seven-plashka3-teamlead.png"
+      }
+    ],
+    "insideScreenTwo": [
+      {
+        "insideScreenTitle": "ОТНОШЕНИЯ В КОМАНДЕ, например:",
+        "insideScreenContent": [
+          "как хвалить, ругать, мотивировать и зачем)",
+          "как проводить митинги, ежедневные, технические, отчетные, большие и 1-на-1",
+          "как решать конфликты",
+          "как оценить членов команды и заставить куда-то двигаться"
+        ],
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-seven-plashka2-teamlead.png"
       },
       {
-        "insideScreenTitle": "Заголовок 3",
-        "insideScreenContent": "Текст для раскрытия 3"
+        "insideScreenTitle": "СКОЛЬКО НУЖНО ПРОГРАММИСТОВ, ЧТОБЫ СДЕЛАТЬ РЕЛИЗ, или:",
+        "insideScreenContent": [
+          "как запитчить идею менеджменту",
+          "репортинг и делегирование",
+          "инструменты и визуализация",
+          "отношения с другими командами"
+        ],
+        "insideScreenBackImage": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-seven-plashka4-teamlead.png"
       }
     ]
   }

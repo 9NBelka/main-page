@@ -1,0 +1,21 @@
+.viewCourseScreenVideos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.viewCourseScreenVideoIframe {
+  display: flex;
+  width: 21vw;
+  height: 12vw;
+  border-radius: 1vw;
+  border: 0;
+  transition: 0.3s;
+  filter: brightness(0.5);
+}
+
+.viewCourseScreenVideoIframe:hover {
+  filter: brightness(1);
+}

@@ -1,3 +1,4 @@
+import DemoVideosScreen from '../../components/DemoVideosScreen/DemoVideosScreen';
 import ForWhomScreen from '../../components/ForWhomScreen/ForWhomScreen';
 import GameFourScreen from '../../components/GameFourScreen/GameFourScreen';
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
@@ -55,6 +56,12 @@ export default function Architecture({ currentInfo }) {
         <h3 className={css.titleScreenText}>что внутри?</h3>
         <div className={css.container}>
           <InsideScreen currentInfo={currentInfo} />
+        </div>
+      </div>
+      <div className={css.architectureBackgroundDemoVideos}>
+        <h3 className={css.titleScreenText}>Демо уроков</h3>
+        <div className={css.container}>
+          <DemoVideosScreen currentInfo={currentInfo} />
         </div>
       </div>
     </>

@@ -1,6 +1,7 @@
 import ForWhomScreenTwoVersion from '../../components/ForWhomScreenTwoVersion/ForWhomScreenTwoVersion';
 import GameFourScreen from '../../components/GameFourScreen/GameFourScreen';
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
+import InsideScreen from '../../components/InsideScreen/InsideScreen';
 import PagesHeader from '../../components/PagesHeader/PagesHeader';
 import ReviewScreen from '../../components/ReviewScreen/ReviewScreen';
 import SpeakersScreen from '../../components/SpeakersScreen/SpeakersScreen';
@@ -47,6 +48,12 @@ export default function TeamLead({ currentInfo }) {
       <div className={css.teamleadBackgroundGames}>
         <div className={css.container}>
           <GameFourScreen currentInfo={currentInfo} />
+        </div>
+      </div>
+      <div className={css.teamleadBackgroundWhatInside}>
+        <h3 className={css.titleScreenText}>что внутри?</h3>
+        <div className={css.container}>
+          <InsideScreen currentInfo={currentInfo} />
         </div>
       </div>
     </>

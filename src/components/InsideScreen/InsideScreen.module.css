@@ -63,7 +63,7 @@
 }
 
 .insideScreenContent.open {
-  max-height: 5vw; /* Устанавливаем примерное ограничение */
+  max-height: 10vw; /* Устанавливаем примерное ограничение */
   opacity: 1;
   padding-top: 1vw;
 }
@@ -73,8 +73,13 @@
   opacity: 0;
 }
 
+.insideScreenContentListText {
+  margin: 0;
+  padding-left: 1vw;
+}
+
 .insideScreenContentText {
-  font-size: 1vw;
+  font-size: 0.9vw;
   color: white;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
