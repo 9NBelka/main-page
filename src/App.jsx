@@ -36,16 +36,18 @@ export default function App() {
   // Находим информацию о курсе по id
   const currentInfo = info.find((item) => item.id === courseId);
 
-  const currentInfoProduct = infoAboutProduct
-    .flatMap((product) => Object.values(product)) // Разворачиваем вложенные объекты
-    .find((item) => item.id === courseId); // Ищем по id
-
+  const currentInfoProduct = infoAboutProduct.map((info, index) => {
+    return info;
+  }); // Разворачиваем вложенные объекты
+  // Ищем по id
+  console.log(infoAboutProduct);
+  console.log(currentInfoProduct);
   return (
     <Routes>
       <Route path='/' element={<Portal />} />
       <Route
         path='/architecture'
-        element={<Architecture currentInfo={currentInfo} currentInfoProduct={currentInfoProduct} />}
+        element={<Architecture currentInfo={currentInfo} infoAboutProduct={currentInfoProduct} />}
       />
       <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
       <Route path='*' element={<NotFoundPage />} />

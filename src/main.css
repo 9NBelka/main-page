@@ -20,6 +20,11 @@ body {
 }
 
 @font-face {
+  font-family: HelveticaLight; /* Гарнитура шрифта */
+  src: url(/src/assets/fonts/HelveticaNeueCyr-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
   font-family: ExanRegular; /* Гарнитура шрифта */
   src: url(/src/assets/fonts/exan_regular.ttf); /* Путь к файлу со шрифтом */
 }
@@ -53,6 +58,7 @@ a {
   --font-ibmp: 'IBMPlexSans-Light';
   --font-helv-medium: 'HelveticaNeueCyr-Medium';
   --font-helv-roman: 'HelveticaRoman';
+  --font-helv-light: 'HelveticaLight';
   --font-ExanRegular: 'ExanRegular';
   --font-ArialBlack: 'ArialBlack';
   --font-weight-normal: normal;

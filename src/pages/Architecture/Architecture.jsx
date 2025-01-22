@@ -12,7 +12,7 @@ import ViewCourseScreen from '../../components/ViewCourseScreen/ViewCourseScreen
 import reviewsArchi from '../../review-jsons/review-architecture.json';
 import css from './Architecture.module.css';
 
-export default function Architecture({ currentInfo, currentInfoProduct }) {
+export default function Architecture({ currentInfo, infoAboutProduct }) {
   return (
     <>
       <div className={css.architectureBackground}>
@@ -65,7 +65,9 @@ export default function Architecture({ currentInfo, currentInfoProduct }) {
           <DemoVideosScreen currentInfo={currentInfo} />
         </div>
       </div>
-      <CostScreen currentInfoProduct={currentInfoProduct} />
+      <div className={css.container}>
+        <CostScreen infoAboutProduct={infoAboutProduct} />
+      </div>
     </>
   );
 }

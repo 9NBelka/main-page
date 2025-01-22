@@ -1,9 +1,9 @@
 import CostMainProducts from '../CostMainProducts/CostMainProducts';
 
-export default function CostScreen() {
+export default function CostScreen({ infoAboutProduct }) {
   return (
     <div>
-      <CostMainProducts />
+      <CostMainProducts infoAboutProduct={infoAboutProduct} />
     </div>
   );
 }
