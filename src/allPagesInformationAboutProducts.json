@@ -12,8 +12,12 @@
         "productCourseAmountVideos": "145",
         "productCourseAmountStudents": "325",
         "productCourseAmountTimes": "16h 40m",
-        "productCourseBuyNow": [],
-        "productCourseMoreInfo": "",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=1800",
+        "productCourseMoreInfo": [
+          "ДОСТУП К ВИДЕО И ДИСКОРД-КОМЬЮНИТИ",
+          "ДОСТУП К РЕПОЗИТОРИЮ С КОДОМ ДЕМО-ПРОЕКТА, УДОБНО РАЗБИТОГО НА УРОКИ",
+          "ОТВЕТЫ НА ВАШИ ВОПРОСЫ В ЧАТЕ"
+        ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
         "productCourseNotification": "ДОСТУПЕН СРАЗУ после покупки",
         "productCoursePrices": []
@@ -28,8 +32,12 @@
         "productCourseAmountVideos": "145",
         "productCourseAmountStudents": "325",
         "productCourseAmountTimes": "16h 40m",
-        "productCourseBuyNow": [],
-        "productCourseMoreInfo": "",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=1823",
+        "productCourseMoreInfo": [
+          "ВСЕ, ЧТО В VANILLA",
+          "ИНДИВИДУАЛЬНАЯ ПРОВЕРКА ЗАДАНИЙ И ВАШИХ ИДЕЙ В ФОРМАТЕ КОД-РЕВЬЮ",
+          "РАЗБОР ЗАДАНИЙ, ИДЕЙ И ОБСУЖДЕНИЕ ПРОДАКШН-РЕШЕНИЙ, ДОПОЛНИТЕЛЬНЫХ ФРЕЙМВОРКОВ И ПР. НА ЕЖЕНЕДЕЛЬНЫХ ОБЩИХ СТРИМАХ"
+        ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
         "productCoursePrices": []
       },
@@ -44,7 +52,7 @@
         "productCourseAmountStudents": "325",
         "productCourseAmountTimes": "16h 40m",
         "productCourseBuyNow": [],
-        "productCourseMoreInfo": "",
+        "productCourseMoreInfo": [],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
         "productCoursePrices": []
       }
@@ -54,26 +62,56 @@
     "id": 1,
     "productCourse": [
       {
+        "id": 0,
+        "productCourseName": "Team Lead",
+        "productCourseCategory": "MasterClass",
+        "productCourseVersion": "Vanilla",
+        "productCourseSpeakers": ["Oleksii Naumenko", "Kateryna Revvo"],
+        "productCourseImages": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-two.png",
+        "productCourseAmountVideos": "16",
+        "productCourseAmountStudents": "82",
+        "productCourseAmountTimes": "1h 45m",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=3515",
+        "productCourseMoreInfo": [
+          "ДОСТУП К ВИДЕО И ДИСКОРД-КОМЬЮНИТИ",
+          "ОТВЕТЫ НА ВАШИ ВОПРОСЫ В ЧАТЕ"
+        ],
+        "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseNotification": "ДОСТУПЕН СРАЗУ после покупки",
+        "productCoursePrices": []
+      },
+      {
         "id": 1,
         "productCourseName": "Team Lead",
         "productCourseCategory": "MasterClass",
-        "productCourseVersion": ["Vanilla", "Standart", "Advanced"],
+        "productCourseVersion": "Standart",
         "productCourseSpeakers": ["Oleksii Naumenko", "Kateryna Revvo"],
-        "productCourseImages": [
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-two.png",
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-three-teamleadd.png",
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-one-teamleadd.png"
+        "productCourseImages": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-three-teamleadd.png",
+        "productCourseAmountVideos": "16",
+        "productCourseAmountStudents": "82",
+        "productCourseAmountTimes": "1h 45m",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=1823",
+        "productCourseMoreInfo": [
+          "ВСЕ, ЧТО В VANILLA",
+          "ИНДИВИДУАЛЬНАЯ ПРОВЕРКА ЗАДАНИЙ И ВАШИХ ИДЕЙ В ФОРМАТЕ КОД-РЕВЬЮ",
+          "РАЗБОР ЗАДАНИЙ, ИДЕЙ И ОБСУЖДЕНИЕ ПРОДАКШН-РЕШЕНИЙ, ДОПОЛНИТЕЛЬНЫХ ФРЕЙМВОРКОВ И ПР. НА ЕЖЕНЕДЕЛЬНЫХ ОБЩИХ СТРИМАХ"
         ],
+        "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCoursePrices": []
+      },
+      {
+        "id": 2,
+        "productCourseName": "Team Lead",
+        "productCourseCategory": "MasterClass",
+        "productCourseVersion": "Advanced",
+        "productCourseSpeakers": ["Oleksii Naumenko", "Kateryna Revvo"],
+        "productCourseImages": "https://lms.k-syndicate.school/wp-content/uploads/2022/10/screen-cost-card-image-one-teamleadd.png",
         "productCourseAmountVideos": "16",
         "productCourseAmountStudents": "82",
         "productCourseAmountTimes": "1h 45m",
         "productCourseBuyNow": [],
-        "productCourseMoreInfo": "",
-        "productCourseDiscounts": [
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
-          "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png"
-        ],
+        "productCourseMoreInfo": [],
+        "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
         "productCoursePrices": []
       }
     ]

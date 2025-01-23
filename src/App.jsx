@@ -13,43 +13,43 @@ export default function App() {
 
   // Получаем id курса на основе текущего пути
   const getCourseIdByPath = (path) => {
-    switch (path) {
-      case '/architecture':
-        return 0;
-      case '/teamlead':
-        return 1;
-      case '/design':
-        return 2;
-      case '/programming-basics':
-        return 3;
-      case '/advanced-unity':
-        return 4;
-      case '/data-science':
-        return 5;
-      default:
-        return null; // Если путь не найден
-    }
+    const course = info.find((item) => item.path === path);
+    return course ? course.id : null;
   };
 
   const courseId = getCourseIdByPath(location.pathname);
 
   // Находим информацию о курсе по id
   const currentInfo = info.find((item) => item.id === courseId);
+  const currentInfoProduct = infoAboutProduct.find((item) => item.id === courseId);
+  // const currentInfoProduct = infoAboutProduct.map((info, index) => {
+  //   return info;
 
-  const currentInfoProduct = infoAboutProduct.map((info, index) => {
-    return info;
-  }); // Разворачиваем вложенные объекты
+  // console.log(currentInfoProduct.id);
+  // console.log(currentInfo.id);
+
+  // currentInfoProduct.id === currentInfo.id ? console.log('da') : console.log('net');
+
+  // }); // Разворачиваем вложенные объекты
   // Ищем по id
-  console.log(infoAboutProduct);
-  console.log(currentInfoProduct);
   return (
     <Routes>
       <Route path='/' element={<Portal />} />
       <Route
         path='/architecture'
-        element={<Architecture currentInfo={currentInfo} infoAboutProduct={currentInfoProduct} />}
+        element={
+          <Architecture
+            currentInfo={currentInfo}
+            infoAboutProduct={infoAboutProduct}
+            currentInfoProduct={currentInfoProduct}
+          />
+        }
       />
-      <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />/
+      <Route
+        path='/teamlead'
+        element={<TeamLead currentInfo={currentInfo} currentInfoProduct={currentInfoProduct} />}
+      />
+      /
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
   );

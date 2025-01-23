@@ -8,7 +8,8 @@
 .costBlockProduct {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 22.5%;
+  height: 100%;
   background: linear-gradient(145deg, rgba(30, 32, 57, 1) 0%, rgba(12, 16, 45, 1) 100%);
   padding: 1.2vw 1.2vw;
   border-radius: 0.5vw;
@@ -32,7 +33,7 @@
 .costProductNotificationText {
   position: absolute;
   bottom: 0.2vw;
-  font-size: 0.95vw;
+  font-size: 0.9vw;
   color: #abbbcc;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-bold);
@@ -56,7 +57,7 @@
 
 .costProductCategoryText {
   display: flex;
-  font-size: 0.85vw;
+  font-size: 0.8vw;
   color: #abbbcc;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
@@ -64,14 +65,18 @@
   padding: 0;
   margin: 0;
   background-color: #2c3d33;
-  padding: 0.2vw 1.6vw;
+  padding: 0.2vw 1.8vw;
+}
+
+.costProductCategoryTextMasterClass {
+  padding: 0.2vw 1vw;
 }
 
 .costProductSpeakersAndBy {
   display: flex;
   flex-direction: row;
   gap: 0.3vw;
-  margin-top: 0.5vw;
+  margin-top: 0.6vw;
 }
 
 .costProductSpeakers {
@@ -80,7 +85,7 @@
 }
 
 .costProductSpeakersText {
-  font-size: 0.85vw;
+  font-size: 0.8vw;
   color: #abbbcc;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
@@ -91,19 +96,19 @@
 }
 
 .costProductNameCourse {
-  font-size: 1.7vw;
+  font-size: 1.65vw;
   color: white;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
-  line-height: var(--font-lineh-normal);
+  /* line-height: var(--font-lineh-normal); */
 }
 
 .costProductVersionCourse {
-  font-size: 1.3vw;
+  font-size: 1.25vw;
   color: var(--color-for-architecture);
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
-  line-height: var(--font-lineh-normal);
+  /* line-height: var(--font-lineh-normal); */
 }
 
 .costProductVideosStudentsTimesBlock {
@@ -125,7 +130,7 @@
 }
 
 .costProductVideosStudentsTimesTextNums {
-  font-size: 1.2vw;
+  font-size: 1.15vw;
   color: #abbbcc;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-bold);
@@ -135,7 +140,7 @@
 }
 
 .costProductVideosStudentsTimesText {
-  font-size: 1.15vw;
+  font-size: 1.05vw;
   color: #abbbcc;
   font-family: var(--font-helv-light);
   font-weight: var(--font-weight-normal);
@@ -148,9 +153,77 @@
   display: flex;
   position: absolute;
   top: 0.5vw;
-  margin-left: 12vw;
+  margin-left: 12.3vw;
 }
 
 .costProductDiscount img {
-  width: 7vw;
+  width: 6vw;
+}
+
+.costProductButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+
+.costProductButtonInfo {
+  font-size: 0.9vw;
+  color: #abbbcc;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  padding: 0.3vw 1.5vw;
+  border: 0.1vw solid #9999a0;
+  border-top-left-radius: 1.2vw;
+  border-bottom-right-radius: 1.2vw;
+  cursor: pointer;
+}
+
+.costProductMoreInfoBlock {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.costProductMoreInfoBlock.open {
+  max-height: 20vw; /* подстрой под высоту списка */
+  transition: max-height 0.4s ease-in;
+}
+
+.costProductMoreInfoList {
+  padding-left: 1vw;
+  margin: 0;
+  margin-top: 1.5vw;
+}
+
+.costProductMoreInfoListNoneMarg {
+  margin-top: 0vw;
+}
+
+.costProductMoreInfoList li {
+  font-size: 0.9vw;
+  color: #abbbcc;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  text-transform: uppercase;
+  margin-top: 0.6vw;
+}
+
+.costProductMoreInfoList li:first-child {
+  margin-top: 0;
+}
+
+.costProductButtonBuy {
+  font-size: 0.9vw;
+  color: #202020;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-lineh-normal);
+  background: linear-gradient(130deg, rgba(255, 150, 0, 1) 0%, rgba(255, 102, 0, 1) 100%);
+  padding: 0.3vw 1.6vw;
+  border: 0.1vw solid transparent;
+  border-top-left-radius: 1.2vw;
+  border-bottom-right-radius: 1.2vw;
 }

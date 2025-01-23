@@ -1,3 +1,4 @@
+import CostScreen from '../../components/CostScreen/CostScreen';
 import ForWhomScreenTwoVersion from '../../components/ForWhomScreenTwoVersion/ForWhomScreenTwoVersion';
 import GameFourScreen from '../../components/GameFourScreen/GameFourScreen';
 import HeadScreen from '../../components/HeadScreen/HeadScreen';
@@ -10,7 +11,7 @@ import ViewCourseScreen from '../../components/ViewCourseScreen/ViewCourseScreen
 import reviewsTeamLead from '../../review-jsons/review-teamlead.json';
 import css from './TeamLead.module.css';
 
-export default function TeamLead({ currentInfo }) {
+export default function TeamLead({ currentInfo, infoAboutProduct, currentInfoProduct }) {
   return (
     <>
       <div className={css.teamleadBackground}>
@@ -55,6 +56,9 @@ export default function TeamLead({ currentInfo }) {
         <div className={css.container}>
           <InsideScreen currentInfo={currentInfo} />
         </div>
+      </div>
+      <div className={css.container}>
+        <CostScreen infoAboutProduct={infoAboutProduct} currentInfoProduct={currentInfoProduct} />
       </div>
     </>
   );
