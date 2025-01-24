@@ -1,10 +1,3 @@
-.costBlockProducts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-
 .costBlockProduct {
   display: flex;
   flex-direction: column;

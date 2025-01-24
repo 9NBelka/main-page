@@ -18,20 +18,26 @@ export default function App() {
   };
 
   const courseId = getCourseIdByPath(location.pathname);
-
-  // Находим информацию о курсе по id
   const currentInfo = info.find((item) => item.id === courseId);
-  const currentInfoProduct = infoAboutProduct.find((item) => item.id === courseId);
-  // const currentInfoProduct = infoAboutProduct.map((info, index) => {
-  //   return info;
 
-  // console.log(currentInfoProduct.id);
-  // console.log(currentInfo.id);
+  const currentInfoId = currentInfo.id;
 
-  // currentInfoProduct.id === currentInfo.id ? console.log('da') : console.log('net');
+  const getCourseIdById = (currentInfo) => {
+    switch (currentInfo) {
+      case 0:
+        return 100;
+      case 1:
+        return 200;
+      default:
+        return null;
+    }
+  };
 
-  // }); // Разворачиваем вложенные объекты
-  // Ищем по id
+  const productId = getCourseIdById(currentInfoId);
+  const currentInfoAboutProduct = infoAboutProduct.find((item) => item.id === productId);
+
+  // console.log('Valid IDsddd:', currentInfoId);
+
   return (
     <Routes>
       <Route path='/' element={<Portal />} />
@@ -40,16 +46,12 @@ export default function App() {
         element={
           <Architecture
             currentInfo={currentInfo}
+            currentInfoAboutProduct={currentInfoAboutProduct}
             infoAboutProduct={infoAboutProduct}
-            currentInfoProduct={currentInfoProduct}
           />
         }
       />
-      <Route
-        path='/teamlead'
-        element={<TeamLead currentInfo={currentInfo} currentInfoProduct={currentInfoProduct} />}
-      />
-      /
+      <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
   );
