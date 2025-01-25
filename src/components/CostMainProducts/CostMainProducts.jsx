@@ -2,7 +2,7 @@ import { useState } from 'react';
 import css from './CostMainProducts.module.css';
 import clsx from 'clsx';
 
-export default function CostMainProducts({ currentInfoAboutProduct }) {
+export default function CostMainProducts({ currentInfoAboutProduct, bundle, bundleTwo }) {
   // Состояние для отслеживания открытых списков (хранит ID открытых элементов)
   const [openLists, setOpenLists] = useState([]);
 
@@ -17,10 +17,13 @@ export default function CostMainProducts({ currentInfoAboutProduct }) {
     }
   };
 
-  // console.log(currentInfoAboutProduct);
-
   return (
-    <div className={css.costBlockProduct}>
+    <div
+      className={clsx(
+        css.costBlockProduct,
+        bundle ? css.costBlockProductBundle : css.costBlockProduct,
+        bundleTwo ? css.costBlockProductBundleTwo : css.costBlockProduct,
+      )}>
       <div className={css.costProductImageAndNotification}>
         <img
           className={css.costProductImage}
@@ -90,7 +93,11 @@ export default function CostMainProducts({ currentInfoAboutProduct }) {
           <p className={css.costProductVideosStudentsTimesText}>Time</p>
         </div>
       </div>
-      <div className={css.costProductButtons}>
+      <div
+        className={
+          (css.costProductButtons,
+          clsx(bundle ? css.costProductButtonsNone : css.costProductButtons))
+        }>
         <a
           className={css.costProductButtonInfo}
           onClick={() => toggleList(currentInfoAboutProduct.id)}>

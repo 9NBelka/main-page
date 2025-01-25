@@ -20,10 +20,14 @@ export default function App() {
   const courseId = getCourseIdByPath(location.pathname);
   const currentInfo = info.find((item) => item.id === courseId);
 
-  const currentInfoId = currentInfo.id;
+  // Проверяем, найден ли currentInfo
+  const currentInfoId = currentInfo ? currentInfo.id : null;
 
-  const getCourseIdById = (currentInfo) => {
-    switch (currentInfo) {
+  console.log('Текущий ID курса:', currentInfoId);
+
+  // Функция для получения ID продукта
+  const getCourseIdById = (id) => {
+    switch (id) {
       case 0:
         return 100;
       case 1:
@@ -34,9 +38,15 @@ export default function App() {
   };
 
   const productId = getCourseIdById(currentInfoId);
-  const currentInfoAboutProduct = infoAboutProduct.find((item) => item.id === productId);
 
-  // console.log('Valid IDsddd:', currentInfoId);
+  // Проверяем, найден ли productId
+  const currentInfoAboutProduct = productId
+    ? infoAboutProduct.find((item) => item.id === productId)
+    : null;
+
+  if (!currentInfoId || !currentInfoAboutProduct) {
+    console.warn('Информация о продукте не найдена:', { currentInfoId, productId });
+  }
 
   return (
     <Routes>
@@ -51,7 +61,16 @@ export default function App() {
           />
         }
       />
-      <Route path='/teamlead' element={<TeamLead currentInfo={currentInfo} />} />
+      <Route
+        path='/teamlead'
+        element={
+          <TeamLead
+            currentInfo={currentInfo}
+            currentInfoAboutProduct={currentInfoAboutProduct}
+            infoAboutProduct={infoAboutProduct}
+          />
+        }
+      />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
   );

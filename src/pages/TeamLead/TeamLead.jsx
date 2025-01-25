@@ -11,7 +11,7 @@ import ViewCourseScreen from '../../components/ViewCourseScreen/ViewCourseScreen
 import reviewsTeamLead from '../../review-jsons/review-teamlead.json';
 import css from './TeamLead.module.css';
 
-export default function TeamLead({ currentInfo, infoAboutProduct, currentInfoProduct }) {
+export default function TeamLead({ currentInfo, currentInfoAboutProduct, infoAboutProduct }) {
   return (
     <>
       <div className={css.teamleadBackground}>
@@ -58,7 +58,10 @@ export default function TeamLead({ currentInfo, infoAboutProduct, currentInfoPro
         </div>
       </div>
       <div className={css.container}>
-        <CostScreen infoAboutProduct={infoAboutProduct} currentInfoProduct={currentInfoProduct} />
+        <CostScreen
+          currentInfoAboutProduct={currentInfoAboutProduct}
+          infoAboutProduct={infoAboutProduct}
+        />
       </div>
     </>
   );

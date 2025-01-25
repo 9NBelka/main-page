@@ -7,6 +7,21 @@
   padding: 1.2vw 1.2vw;
   border-radius: 0.5vw;
   border: 0.1vw solid #0f929f;
+  position: relative;
+}
+
+.costBlockProductBundle {
+  /* width: 45%; */
+  width: 65%;
+  transform: scale(0.8);
+  transform-origin: center; /* Сокращение от центра */
+  height: auto;
+}
+
+.costBlockProductBundleTwo {
+  position: absolute;
+  top: 3.5vw;
+  left: 4vw;
 }
 
 .costProductImageAndNotification {
@@ -146,7 +161,7 @@
   display: flex;
   position: absolute;
   top: 0.5vw;
-  margin-left: 12.3vw;
+  right: -0.5vw;
 }
 
 .costProductDiscount img {
@@ -158,6 +173,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2vw;
+}
+
+.costProductButtonsNone {
+  display: none;
 }
 
 .costProductButtonInfo {

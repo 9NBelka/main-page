@@ -1,17 +1,28 @@
 import CostMainProducts from '../CostMainProducts/CostMainProducts';
+import css from './CostBundleProducts.module.css';
 
-export default function CostBundleProducts({ currentInfoProduct, archi, teamlead }) {
-  const mss = [101, 101, 101, 101, 101, 101];
+export default function CostBundleProducts({
+  bundle,
+  arhitectureVanilla,
+  arhitectureStandart,
+  courseArhitectureVanilla,
+  courseArhitectureStandart,
+}) {
+  const bundleTwo = true;
   return (
-    <div>
-      {/* <CostMainProducts currentInfoProduct={(currentInfoProduct.id = mss.map(prop))} />
-      <CostMainProducts currentInfoProduct={(currentInfoProduct.id = 1)} /> */}
+    <div className={css.bundleBlocks}>
+      <CostMainProducts
+        key={arhitectureVanilla}
+        currentInfoAboutProduct={courseArhitectureVanilla}
+        bundle={bundle}
+      />
 
-      {/* <CostMainProducts currentInfoProduct={(currentInfoProduct.id = archi} />
-      <CostMainProducts currentInfoProduct={(currentInfoProduct.id = teamlead)} />
-
-      <CostMainProducts currentInfoProduct={(currentInfoProduct.id = archi} />
-      <CostMainProducts currentInfoProduct={(currentInfoProduct.id = teamlead)} /> */}
+      <CostMainProducts
+        key={arhitectureStandart}
+        currentInfoAboutProduct={courseArhitectureStandart}
+        bundle={bundle}
+        bundleTwo={bundleTwo}
+      />
     </div>
   );
 }

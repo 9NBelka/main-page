@@ -1,11 +1,14 @@
+import CostBundleProducts from '../CostBundleProducts/CostBundleProducts';
 import CostMainProducts from '../CostMainProducts/CostMainProducts';
 import scss from './CostScreen.module.css';
 
 export default function CostScreen({ currentInfoAboutProduct, infoAboutProduct }) {
-  // Массив всех нужных ID с именами
   // Константы для каждого курса
-  const ArhiV = 201;
-  const ArchiS = 101;
+  const bundle = true;
+  const arhitectureVanilla = 101;
+  const arhitectureStandart = 102;
+  // const TeamLeadVanilla = 201;
+  // const TeamLeadStandart = 202;
 
   // Функция для поиска данных курса по ID
   const findCourseById = (id, data) => {
@@ -16,25 +19,40 @@ export default function CostScreen({ currentInfoAboutProduct, infoAboutProduct }
   };
 
   // Данные для конкретных курсов
-  const courseArhiV = findCourseById(ArhiV, infoAboutProduct);
-  const courseArchiS = findCourseById(ArchiS, infoAboutProduct);
-
-  // console.log(selectedCourses);
+  const courseArhitectureVanilla = findCourseById(arhitectureVanilla, infoAboutProduct);
+  const courseArhitectureStandart = findCourseById(arhitectureStandart, infoAboutProduct);
 
   return (
-    <div>
+    <div className={scss.cost}>
       <div className={scss.costBlockProducts}>
         {currentInfoAboutProduct.productCourse.map((product) => (
           <CostMainProducts key={product.id} currentInfoAboutProduct={product} />
         ))}
       </div>
 
-      <CostMainProducts key={ArhiV} currentInfoAboutProduct={courseArhiV} />
-      <CostMainProducts key={ArchiS} currentInfoAboutProduct={courseArchiS} />
-
-      {/* <CostMainProducts key={desiredCourses.id} currentInfoAboutProduct={course} /> */}
-
-      {/* <CostMainProducts key={101} currentInfoAboutProduct={selectedCourses} /> */}
+      <div className={scss.costBlockBundleProducts}>
+        <CostBundleProducts
+          arhitectureVanilla={arhitectureVanilla}
+          arhitectureStandart={arhitectureStandart}
+          courseArhitectureVanilla={courseArhitectureVanilla}
+          courseArhitectureStandart={courseArhitectureStandart}
+          bundle={bundle}
+        />
+        <CostBundleProducts
+          arhitectureVanilla={arhitectureVanilla}
+          arhitectureStandart={arhitectureStandart}
+          courseArhitectureVanilla={courseArhitectureVanilla}
+          courseArhitectureStandart={courseArhitectureStandart}
+          bundle={bundle}
+        />
+        <CostBundleProducts
+          arhitectureVanilla={arhitectureVanilla}
+          arhitectureStandart={arhitectureStandart}
+          courseArhitectureVanilla={courseArhitectureVanilla}
+          courseArhitectureStandart={courseArhitectureStandart}
+          bundle={bundle}
+        />
+      </div>
     </div>
   );
 }
