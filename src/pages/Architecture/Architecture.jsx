@@ -65,11 +65,17 @@ export default function Architecture({ currentInfo, currentInfoAboutProduct, inf
           <DemoVideosScreen currentInfo={currentInfo} />
         </div>
       </div>
-      <div className={css.container}>
-        <CostScreen
-          currentInfoAboutProduct={currentInfoAboutProduct}
-          infoAboutProduct={infoAboutProduct}
-        />
+      <div className={css.titleScreen}>
+        <h3 className={css.titleScreenText}>Стоимость</h3>
+      </div>
+      <div className={css.architectureBackgroundCost}>
+        <div className={css.container}>
+          <CostScreen
+            currentInfo={currentInfo}
+            currentInfoAboutProduct={currentInfoAboutProduct}
+            infoAboutProduct={infoAboutProduct}
+          />
+        </div>
       </div>
     </>
   );

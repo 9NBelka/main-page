@@ -11,17 +11,20 @@
 }
 
 .costBlockProductBundle {
+  display: flex;
   /* width: 45%; */
-  width: 65%;
-  transform: scale(0.8);
-  transform-origin: center; /* Сокращение от центра */
+  width: 58%;
+  padding: 1.2vw 1.2vw;
+  /* transform: scale(0.8); */
+  /* transform-origin: center;  */
   height: auto;
 }
 
 .costBlockProductBundleTwo {
+  display: flex;
   position: absolute;
-  top: 3.5vw;
-  left: 4vw;
+  top: 3.8vw;
+  left: 5.5vw;
 }
 
 .costProductImageAndNotification {
@@ -38,6 +41,11 @@
   border-bottom-right-radius: 3vw;
 }
 
+.costBlockProductBundleImage {
+  box-shadow: 0px 0.3vw 1vw -0.01vw #258479;
+  /* width: 15vw; */
+}
+
 .costProductNotificationText {
   position: absolute;
   bottom: 0.2vw;
@@ -51,6 +59,12 @@
   width: 10vw;
 }
 
+.costBlockProductBundleNotificationText {
+  bottom: 0vw;
+  font-size: 0.75vw;
+  width: 8vw;
+}
+
 .productCourseNotificationGreen {
   color: #60ff00;
 }
@@ -61,6 +75,10 @@
   justify-content: space-between;
   gap: 1.5vw;
   margin-top: 1vw;
+}
+
+.costBlockProductBundleCategoryAndSpeakers {
+  margin-top: 0.7vw;
 }
 
 .costProductCategoryText {
@@ -76,8 +94,13 @@
   padding: 0.2vw 1.8vw;
 }
 
+.costBlockProductBundleCategoryText {
+  font-size: 0.6vw;
+  padding: 0.2vw 1.4vw;
+}
+
 .costProductCategoryTextMasterClass {
-  padding: 0.2vw 1vw;
+  padding: 0.2vw 0.7vw;
 }
 
 .costProductSpeakersAndBy {
@@ -87,9 +110,17 @@
   margin-top: 0.6vw;
 }
 
+.costBlockProductBundleSpeakersAndBy {
+  margin-top: 0.4vw;
+}
+
 .costProductSpeakers {
   display: flex;
   flex-direction: column;
+}
+
+.costProductSpeakersPaddBottom {
+  padding-bottom: 0.75vw;
 }
 
 .costProductSpeakersText {
@@ -103,12 +134,20 @@
   text-align: right;
 }
 
+.costBlockProductBundleSpeakersText {
+  font-size: 0.65vw;
+}
+
 .costProductNameCourse {
   font-size: 1.65vw;
   color: white;
   font-family: var(--font-helv-roman);
   font-weight: var(--font-weight-normal);
   /* line-height: var(--font-lineh-normal); */
+}
+
+.costBlockProductBundleNameCourse {
+  font-size: 1.25vw;
 }
 
 .costProductVersionCourse {
@@ -119,11 +158,19 @@
   /* line-height: var(--font-lineh-normal); */
 }
 
+.costBlockProductBundleVersionCourse {
+  font-size: 1vw;
+}
+
 .costProductVideosStudentsTimesBlock {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1vw;
+}
+
+.costBlockProductBundleVideosStudentsTimesBlock {
+  margin-top: 0.5vw;
 }
 
 .costProductVideosStudentsBlock {
@@ -147,6 +194,10 @@
   margin: 0;
 }
 
+.costBlockProductBundleVideosStudentsTimesTextNums {
+  font-size: 0.95vw;
+}
+
 .costProductVideosStudentsTimesText {
   font-size: 1.05vw;
   color: #abbbcc;
@@ -157,6 +208,10 @@
   margin: 0;
 }
 
+.costBlockProductBundleVideosStudentsTimesText {
+  font-size: 0.85vw;
+}
+
 .costProductDiscount {
   display: flex;
   position: absolute;
@@ -164,8 +219,17 @@
   right: -0.5vw;
 }
 
+.costBlockProductBundleDiscount {
+  top: 0.5vw;
+  right: -0.5vw;
+}
+
 .costProductDiscount img {
   width: 6vw;
+}
+
+.costBlockProductBundleDiscount img {
+  width: 5vw;
 }
 
 .costProductButtons {

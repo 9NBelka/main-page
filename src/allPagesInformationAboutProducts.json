@@ -19,6 +19,8 @@
           "ОТВЕТЫ НА ВАШИ ВОПРОСЫ В ЧАТЕ"
         ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
         "productCourseNotification": "ДОСТУПЕН СРАЗУ после покупки",
         "productCoursePrices": []
       },
@@ -39,6 +41,8 @@
           "РАЗБОР ЗАДАНИЙ, ИДЕЙ И ОБСУЖДЕНИЕ ПРОДАКШН-РЕШЕНИЙ, ДОПОЛНИТЕЛЬНЫХ ФРЕЙМВОРКОВ И ПР. НА ЕЖЕНЕДЕЛЬНЫХ ОБЩИХ СТРИМАХ"
         ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
         "productCoursePrices": []
       },
       {
@@ -54,6 +58,8 @@
         "productCourseBuyNow": [],
         "productCourseMoreInfo": [],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
         "productCoursePrices": []
       }
     ]
@@ -77,6 +83,8 @@
           "ОТВЕТЫ НА ВАШИ ВОПРОСЫ В ЧАТЕ"
         ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
         "productCourseNotification": "ДОСТУПЕН СРАЗУ после покупки",
         "productCoursePrices": []
       },
@@ -97,6 +105,8 @@
           "РАЗБОР ЗАДАНИЙ, ИДЕЙ И ОБСУЖДЕНИЕ ПРОДАКШН-РЕШЕНИЙ, ДОПОЛНИТЕЛЬНЫХ ФРЕЙМВОРКОВ И ПР. НА ЕЖЕНЕДЕЛЬНЫХ ОБЩИХ СТРИМАХ"
         ],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
         "productCoursePrices": []
       },
       {
@@ -112,6 +122,55 @@
         "productCourseBuyNow": [],
         "productCourseMoreInfo": [],
         "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCoursePrices": []
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "productCourse": [
+      {
+        "id": 301,
+        "productCourseName": "Unit Testing",
+        "productCourseCategory": "Course",
+        "productCourseVersion": "Vanilla",
+        "productCourseSpeakers": ["Anatoly Kolesnik"],
+        "productCourseImages": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-card-image-three.png",
+        "productCourseAmountVideos": "14",
+        "productCourseAmountStudents": "100+",
+        "productCourseAmountTimes": "5h 43m",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=3515",
+        "productCourseMoreInfo": [
+          "ДОСТУП К ВИДЕО И ДИСКОРД-КОМЬЮНИТИ",
+          "ОТВЕТЫ НА ВАШИ ВОПРОСЫ В ЧАТЕ"
+        ],
+        "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseNotification": "ДОСТУПЕН СРАЗУ после покупки",
+        "productCoursePrices": []
+      },
+      {
+        "id": 302,
+        "productCourseName": "Unit Testing",
+        "productCourseCategory": "Course",
+        "productCourseVersion": "Standart",
+        "productCourseSpeakers": ["Anatoly Kolesnik"],
+        "productCourseImages": "https://lms.k-syndicate.school/wp-content/uploads/2022/11/test-1-cost-unittest.png",
+        "productCourseAmountVideos": "14",
+        "productCourseAmountStudents": "100+",
+        "productCourseAmountTimes": "5h 43m",
+        "productCourseBuyNow": "https://lms.k-syndicate.school/checkout/?add-to-cart=1823",
+        "productCourseMoreInfo": [
+          "ВСЕ, ЧТО В VANILLA",
+          "ИНДИВИДУАЛЬНАЯ ПРОВЕРКА ЗАДАНИЙ И ВАШИХ ИДЕЙ В ФОРМАТЕ КОД-РЕВЬЮ",
+          "РАЗБОР ЗАДАНИЙ, ИДЕЙ И ОБСУЖДЕНИЕ ПРОДАКШН-РЕШЕНИЙ, ДОПОЛНИТЕЛЬНЫХ ФРЕЙМВОРКОВ И ПР. НА ЕЖЕНЕДЕЛЬНЫХ ОБЩИХ СТРИМАХ"
+        ],
+        "productCourseDiscounts": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount13.png",
+        "productCourseDiscountsBundle": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
+        "productCourseDiscountsBundleTwo": "https://lms.k-syndicate.school/wp-content/uploads/2022/09/screen-cost-discount40.png",
         "productCoursePrices": []
       }
     ]

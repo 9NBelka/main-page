@@ -1,4 +1,30 @@
+.bundleBlockColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
 .bundleBlocks {
   display: flex;
+  width: 22vw;
   position: relative;
+}
+
+.costBlockProducts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+
+.bundleBlocksCourseName {
+  display: flex;
+  font-size: 1vw;
+  color: #abbbcc;
+  font-family: var(--font-helv-roman);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-lineh-normal);
+  margin-top: 5vw;
 }

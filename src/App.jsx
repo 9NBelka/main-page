@@ -32,6 +32,8 @@ export default function App() {
         return 100;
       case 1:
         return 200;
+      case 2:
+        return 300;
       default:
         return null;
     }
